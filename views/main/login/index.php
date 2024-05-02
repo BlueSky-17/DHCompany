@@ -2,31 +2,31 @@
 <html lang="en">
 
 <head>
-  <title>SQT2 GLOBAL - Login</title>
+  <title>DHCompany - Login</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--===============================================================================================-->
-  <link rel="icon" type="image/png" href="/SQT2 GLOBAL/public/uploads/favicon.png" />
+  <link rel="icon" type="image/png" href="public/uploads/favicon.png" />
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="public/vendor/bootstrap/css/bootstrap.min.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css"
-    href="/SQT2 GLOBAL/public/fonts/iconic/css/material-design-iconic-font.min.css">
+    href="public/fonts/iconic/css/material-design-iconic-font.min.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="public/vendor/animate/animate.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/css-hamburgers/hamburgers.min.css">
+  <link rel="stylesheet" type="text/css" href="public/vendor/css-hamburgers/hamburgers.min.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/animsition/css/animsition.min.css">
+  <link rel="stylesheet" type="text/css" href="public/vendor/animsition/css/animsition.min.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="public/vendor/select2/select2.min.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" type="text/css" href="public/vendor/daterangepicker/daterangepicker.css">
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/css/util.css">
-  <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/css/main.css">
+  <link rel="stylesheet" type="text/css" href="public/css/util.css">
+  <link rel="stylesheet" type="text/css" href="public/css/main.css">
   <!--===============================================================================================-->
 
 </head>
@@ -35,7 +35,7 @@
 <body>
 
   <div class="limiter">
-    <div class="container-login100" style="background-image: url('/SQT2 GLOBAL/public/img/background.jpg');">
+    <div class="container-login100" style="background-image: url('public/img/background.jpg');">
       <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
         <form method="POST" class="login100-form validate-form" data-aos="fade-up">
@@ -107,21 +107,21 @@
   <div id="dropDownSelect1"></div>
 
   <!--===============================================================================================-->
-  <script src="/SQT2 GLOBAL/public/vendor/jquery/jquery-3.2.1.min.js"></script>
+  <script src="public/vendor/jquery/jquery-3.2.1.min.js"></script>
   <!--===============================================================================================-->
-  <script src="/SQT2 GLOBAL/public/vendor/animsition/js/animsition.min.js"></script>
+  <script src="public/vendor/animsition/js/animsition.min.js"></script>
   <!--===============================================================================================-->
-  <script src="/SQT2 GLOBAL/public/vendor/bootstrap/js/popper.js"></script>
-  <script src="/SQT2 GLOBAL/public/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="public/vendor/bootstrap/js/popper.js"></script>
+  <script src="public/vendor/bootstrap/js/bootstrap.min.js"></script>
   <!--===============================================================================================-->
-  <script src="/SQT2 GLOBAL/public/vendor/select2/select2.min.js"></script>
+  <script src="public/vendor/select2/select2.min.js"></script>
   <!--===============================================================================================-->
-  <script src="/SQT2 GLOBAL/public/vendor/daterangepicker/moment.min.js"></script>
-  <script src="/SQT2 GLOBAL/public/vendor/daterangepicker/daterangepicker.js"></script>
+  <script src="public/vendor/daterangepicker/moment.min.js"></script>
+  <script src="public/vendor/daterangepicker/daterangepicker.js"></script>
   <!--===============================================================================================-->
-  <script src="/SQT2 GLOBAL/public/vendor/countdowntime/countdowntime.js"></script>
+  <script src="public/vendor/countdowntime/countdowntime.js"></script>
   <!--===============================================================================================-->
-  <script src="/SQT2 GLOBAL/public/js/main.js"></script>
+  <script src="public/js/main.js"></script>
 
 </body>
 

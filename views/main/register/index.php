@@ -6,37 +6,38 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>SQT2 GLOBAL - Register</title>
+    <title>DHCompany - Register</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/SQT2 GLOBAL/public/uploads/favicon.png" />
+    <link rel="icon" type="image/png" href="public/uploads/favicon.png" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="public/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="public/fonts/iconic/css/material-design-iconic-font.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="public/vendor/animate/animate.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="public/vendor/css-hamburgers/hamburgers.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="public/vendor/animsition/css/animsition.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href=""> -->
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="public/vendor/select2/select2.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="public/vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/css/util.css">
-    <link rel="stylesheet" type="text/css" href="/SQT2 GLOBAL/public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="public/css/util.css">
+    <link rel="stylesheet" type="text/css" href="public/css/main.css">
 
 </head>
 
 <body>
     <div class="limiter">
-        <div class="container-login100" style="background-image: url('/SQT2 GLOBAL/public/img/background.jpg');">
+        <div class="container-login100" style="background-image: url('public/img/background.jpg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
@@ -144,7 +145,7 @@
 
                 </form>
 
-                <div class="login100-more" style="background-image: url('/SQT2 GLOBAL/public/assets/img/slide/VNG Campus 31.jpg');">
+                <div class="login100-more" style="background-image: url('public/assets/img/slide/VNG Campus 31.jpg');">
                 </div>
             </div>
 

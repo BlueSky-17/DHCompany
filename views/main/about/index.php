@@ -21,7 +21,7 @@
 
       <div class="row content">
         <div class="col-lg-5" data-aos="fade-right">
-          <h2>Tại sao lựa chọn SQT2 Global</h2>
+          <h2>Tại sao lựa chọn DHCompany</h2>
         </div>
         <div class="col-lg-5 pt-4 pt-lg-0" data-aos="fade-left">
           <p>
@@ -108,9 +108,9 @@
 
       <div class="section-title" data-aos="fade-up">
         <h2>Ban <span><strong>Điều Hành</strong></span></h2>
-        <p>SQT2 GLOBAL coi việc phát triển con người là nền tảng cho mọi hoạt động của tổ chức. Trong tương lai, SQT2
+        <p>DHCompany coi việc phát triển con người là nền tảng cho mọi hoạt động của tổ chức. Trong tương lai, SQT2
           GLOBAL có thể thay đổi chiến lược, vận hành những sản phẩm mới, chiếm lĩnh thị trường mới,... và chính con
-          người SQT2 GLOBAL sẽ tạo ra những thay đổi này</p>
+          người DHCompany sẽ tạo ra những thay đổi này</p>
       </div>
 
       <div class="row">
@@ -146,7 +146,7 @@
             </div>
             <div class="member-info">
               <h4>ÔNG THI KHẮC QUÂN</h4>
-              <span>Phó Tổng Giám đốc điều hành SQT2 GLOBAL</span>
+              <span>Phó Tổng Giám đốc điều hành DHCompany</span>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@
             </div>
             <div class="member-info">
               <h4>ÔNG ĐẶNG QUANG THÀNH</h4>
-              <span>Phó Tổng Giám đốc điều hành SQT2 GLOBAL, lãnh đạo dịch vụ đám mây</span>
+              <span>Phó Tổng Giám đốc điều hành DHCompany, lãnh đạo dịch vụ đám mây</span>
             </div>
           </div>
         </div>
@@ -248,7 +248,7 @@
 
       <div class="section-title">
         <h2>Đối tác</h2>
-        <p>Danh sách đối tác ngày càng dài thêm là minh chứng cho mối quan hệ hợp tác hiệu quả giữa SQT2 GLOBAL cùng các
+        <p>Danh sách đối tác ngày càng dài thêm là minh chứng cho mối quan hệ hợp tác hiệu quả giữa DHCompany cùng các
           đối tác tại Việt Nam và nhiều quốc gia trên thế giới. CMC SQT2 tự hào được kể tên các thương hiệu nổi tiếng mà SQT2
           GLOBAL đã và đang hợp tác.</p>
       </div>
