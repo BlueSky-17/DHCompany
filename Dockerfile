@@ -1,0 +1,5 @@
+FROM mysql:5.7
+ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes
+ENV MYSQL_ROOT_PASSWORD=""
+ENV MYSQL_DATABASE=web
+ADD web.sql /docker-entrypoint-initdb.d
