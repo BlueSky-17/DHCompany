@@ -41,7 +41,8 @@ if ($user == 'error') {
   include_once('controllers/errorsController.php');
 }
 else {
-  include_once('controllers/' .$user ."/" . $controller . '_controller.php');
+  // include_once('controllers/' .$user ."/" . $controller . '_controller.php');
+  include_once('controllers/' .$user ."/" . $controller . 'Controller.php');
 }
 // include_once('controllers/' .$user ."/" . $controller . '_controller.php');
 
