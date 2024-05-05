@@ -22,6 +22,8 @@ $(".btn-edit").click(function (e) {
 
 $(".btn-delete").click(function (e) {
 	var id = $(this).data("id");
+	var name = $(this).data("name");
 	$("#DeleteCompanyModal input[name='id']").val(id);
+	$("#DeleteCompanyModal input[name='name']").val(name);
 	$('#DeleteCompanyModal').modal('show');
 })
