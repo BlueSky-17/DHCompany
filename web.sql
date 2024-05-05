@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: May 05, 2024 at 07:14 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th5 05, 2024 lúc 06:31 PM
+-- Phiên bản máy phục vụ: 10.4.32-MariaDB
+-- Phiên bản PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `web`
+-- Cơ sở dữ liệu: `web`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Cấu trúc bảng cho bảng `admin`
 --
 
 CREATE TABLE `admin` (
@@ -35,7 +35,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `admin`
+-- Đang đổ dữ liệu cho bảng `admin`
 --
 
 INSERT INTO `admin` (`username`, `password`, `createAt`, `updateAt`) VALUES
@@ -44,7 +44,7 @@ INSERT INTO `admin` (`username`, `password`, `createAt`, `updateAt`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `comment`
+-- Cấu trúc bảng cho bảng `comment`
 --
 
 CREATE TABLE `comment` (
@@ -58,7 +58,7 @@ CREATE TABLE `comment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `comment`
+-- Đang đổ dữ liệu cho bảng `comment`
 --
 
 INSERT INTO `comment` (`id`, `date`, `approved`, `content`, `news_id`, `user_id`, `parent`) VALUES
@@ -69,7 +69,7 @@ INSERT INTO `comment` (`id`, `date`, `approved`, `content`, `news_id`, `user_id`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `company`
+-- Cấu trúc bảng cho bảng `company`
 --
 
 CREATE TABLE `company` (
@@ -81,7 +81,7 @@ CREATE TABLE `company` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `company`
+-- Đang đổ dữ liệu cho bảng `company`
 --
 
 INSERT INTO `company` (`id`, `name`, `address`, `createAt`, `updateAt`) VALUES
@@ -93,7 +93,7 @@ INSERT INTO `company` (`id`, `name`, `address`, `createAt`, `updateAt`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `news`
+-- Cấu trúc bảng cho bảng `news`
 --
 
 CREATE TABLE `news` (
@@ -106,7 +106,7 @@ CREATE TABLE `news` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `news`
+-- Đang đổ dữ liệu cho bảng `news`
 --
 
 INSERT INTO `news` (`id`, `status`, `date`, `description`, `content`, `title`) VALUES
@@ -116,7 +116,7 @@ INSERT INTO `news` (`id`, `status`, `date`, `description`, `content`, `title`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Cấu trúc bảng cho bảng `product`
 --
 
 CREATE TABLE `product` (
@@ -129,18 +129,22 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `product`
+-- Đang đổ dữ liệu cho bảng `product`
 --
 
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
-(1, 400000, 'Chuột Logitech G102 Lightsync RGB White', 'Nhà Sản Xuất : Logitech - Tình Trạng : Mới 100% - Bảo Hành : 24 tháng - Led : RGB', 'Dù có mức giá rất bình dân nhưng Chuột Logitech G102 Lightsync RGB lại được trang bị led  RGB 16,8 triệu màu .Chọn một màu hay trộn 3 màu, hiệu ứng có sẵn hay tạo hiệu ứng của riêng bạn . Sự lựa chọn là của bạn ! Bạn còn có thể đồng bộ chuột với thiết bị LIGHTSYNC của Logitech G khác giúp góc máy trở nên đồng bộ và độc đáo hơn.', 'https://product.hstatic.net/1000026716/product/logitech-g102-lightsync-rgb-white-1_eb113ff7e83b4289812fb9bff7034b4d.jpg'),
-(4, 3350000, 'Bàn phím Leopold FC660M Bluetooth Coral Blue Limited Edition', 'Hãng sản xuất: Leopold  - Màu: Coral Blue Limited - Bảo hành: 24 tháng - Switch: Cherry MX Brown / Blue / Silent Red / Red', 'Một trong những thương hiệu bàn phím cơ đáng sở hữu trên thị trường không thể không nhắc đến là Leopold. Các sản phẩm được sản xuất từ Hàn Quốc theo đuổi phong cách cổ điển cùng cảm giác bấm mới lạ đã làm nên sự thành công của thương hiệu, Leopold FC660M Bluetooth Coral Blue Limited Edition là một trong số đó.', 'https://file.hstatic.net/1000026716/file/gearvn-ban-phim-leopold-fc660m-bluetooth-coral-blue-limited-edition-1_580acd1ae287460bb6949735722d634e.png'),
-(5, 284904000, 'Laptop gaming ASUS TUF F15 FX507ZE HN093W', 'Bảo hành chính hãng 24 tháng - Hỗ trợ đổi mới trong 7 ngày - Windows bản quyền tích hợp - Miễn phí giao hàng toàn quốc.', 'Nếu Asus Vivobook và Asus Zenbook thống lĩnh thị trường laptop văn phòng, mỏng nhẹ thì phân khúc laptop gaming ASUS TUF Gaming chính là một cái tên đáng gờm. Tiếp nối sự thành công của những thế hệ trước - ASUS TUF F15 FX507ZE HN0093W sẽ là một cái tên đầy triển vọng và hứa hẹn gây sốt cho cộng đồng game thủ thời gian sắp tới.', 'https://product.hstatic.net/1000026716/product/02_fx507_92b1354499a64ca4b7d436fe2d1db50d.png');
+(1, 22500000, 'MEGA SPACE MOLLY 1000% LOUIS DE GUZMAN', 'Tên sản phẩm: MEGA SPACE MOLLY 1000% Louis De Guzman\r\nKích Thước: 70cm\r\nChất Liệu: PVC/ABS\r\nThiết Kế: Molly\r\nSản Xuất: Pop Mart', 'Mega Space Molly 1000% - The Along The Way là sự kết hợp tinh tế giữa Molly và nghệ sĩ Louis De Guzman.\r\n\r\nVới thiết kế lần này, Molly đầy nghịch ngợm trong bộ đồ phi hành gia với các chi tiết đầy phá cách. Hai túi phản lực đằng sau đổ đầy cát san hô cùng điểm nhấn theo style gradient chuyển màu đầy bắt mắt. Tới ngay Toyist Zone để rinh em siêu phẩm này về trấn yểm ngay!', 'public/img/products/2024_05_05_06_27_07pm.png'),
+(2, 6950000, 'SANK - WHALE FALL - BLUES', 'Tên sản phẩm: Sank-Whale Fall-Blues\r\nKích Thước: 31cm X 27.1cm X 16cm\r\nChất Liệu: Resin\r\nThiết Kế: Sank Toys\r\nSản Xuất: Sank Toys', 'Chắc chắn đây là một pha flex khả năng thiết kế và tạo hình từ nhà Sank toys (dù trước ai không ai nghi ngờ gì cả) đỉnh nhất từ trước tới nay! Một pha rẽ sóng đạp gió đúng chuẩn điêu luyện từ người bạn Sank Toys.\r\n\r\nĐặc biệt là dù nhìn từ góc độ nào thì bạn vẫn thấy hình ảnh cậu ấy đang khi tung mình xuyên qua cả cơn sóng bằng cả tính mạng. Trông cũng không khác lắm với vẻ kỳ vĩ của cá voi huyền thoại. Muốn nhìn cậu ấy kỹ hơn thì tới Toyist Zone ngay nào.', 'public/img/products/2024_05_05_06_27_51pm.png'),
+(3, 2950000, 'SANK - NUCLEAR CRISIS - DELUSION', 'Tên sản phẩm: Sank-Nuclear Crisis-Delusion/Blues\r\nKích Thước: 10.8cm X 10.5cm X 13.2cm\r\nChất Liệu: Resin\r\nThiết Kế: Sank Toys\r\nSản Xuất: Sank Toys', 'Sank-Nuclear Crisis series mở ra viễn cảnh sau cuộc tấn công hạt nhân.\r\nSank Toys may mắn thoát được và đang lênh đênh trên biển trong chiếc thùng phóng xa đầy nguy hiểm. Nhưng với sức sống bền bỉ (và một cái đầu lạnh), cậu vẫn giữ được sự minh mẫn để bám trụ. Cậu ấy sẽ rất cảm kích nếu bạn trở thành chiếc phao cứu sinh “kéo” cậu vào bờ đó.\r\n\r\nVới hai phiên bản Delusion ảo mộng và Blues nhuộm màu hoen rỉ, bạn sẽ chọn cho mình người bạn nào đây?', 'public/img/products/2024_05_05_06_28_32pm.png'),
+(4, 790000, 'DIMOO ANIMAL KINGDOM SERIES - PILLOW', 'Tên sản phẩm: DIMOO Animal Kingdom Series-Pillow\r\nKích Thước: 86 x 35cm\r\nChất Liệu: SHELL-100% POLYESTER FIBER STUFFING-100% POLYESTERFIBER\r\nThiết Kế: Dimoo\r\nSản Xuất: Pop Mart', 'Suỵt! Tụi mình ngửi thấy có mùi của sự đáng yêu quanh đây~\r\nMà sinh vật toả ra nguồn không khí đó có vẻ là một sinh vật có dáng hình tựa sư tử nè, có bộ lông màu nâu mềm mượt cùng gương mặt siêu khả ái thấy là ưng.\r\n\r\nKhông ai khác chính là DIMOO ANIMAL KINGDOM SERIES-PILLOW ~ một mẫu gối ôm xinh yêu có khả năng suối ấm tâm hồn bạn một cách diệu kỳ.', 'public/img/products/2024_05_05_06_29_13pm.png'),
+(5, 190000, 'THE MONSTER CATCH ME IF YOU LIKE ME - PENDANT', 'Tên sản phẩm: THE MONSTERS Catch Me If You Like Me Series-Pendant Blind Box\r\nKích Thước: 11cm\r\nChất Liệu: Zinc Alloy/lron\r\nThiết Kế: The Monsters\r\nSản Xuất: Pop Mart', '\"\"Đố bạn bắt được tui!\"\"\r\nĐúng rồi. Toyist Zone đố bạn không nhanh nhanh chạy theo và \"\"bắt ngay\"\" một (vài) mẫu keychain THE MONSTERS siêu long lanh lóng lánh này về nhà luôn á!\r\n\r\nPhiên bản blindbox keychain có thể không mới, nhưng vẻ đẹp cũng như thiết kế kim loại ánh vàng phối màu của mỗi chiếc keychain vẫn đủ sức quyến rũ những ai đam mê. Chưa kể mỗi mẫu keychain đều tái hiện lại khung cảnh đuổi bắt đầy máu lửa giữa LABUBU và TYCOCO! Tới ngay Toyist Zone để không bỏ lỡ cuộc đối đầu gây cấn này ngay.\r\n', 'public/img/products/2024_05_05_06_30_00pm.png'),
+(6, 1990000, 'NGAEW NGAEW X STRANGE CAT TOYS', 'Tên sản phẩm: Ngaew Ngaew x Strange Cat Toys\r\nKích Thước: ~10cm\r\nChất Liệu: Soft Vinyl/PVC\r\nThiết Kế: Ngaew Ngaew\r\nSản Xuất: Strange Cat Toys\r\n______________________________', 'Hmmmm ~ nói chung là đáng yêu thì sao không rinh một em Ngaew Ngaew x Strange Cat Toys này về cho được. Nhiều khi cũng tự hỏi với giao diện phóng đổ tim người khác như vậy thì bé thỏ này cảm thấy thế nào. Chưa kể là bé thỏ này cũng điệu lắm nha, có phụ kiện kính và nón đội gỡ ra được luôn! Quá trời dễ thương vậy thì còn đợi gì bạn chưa ghé Toyist Zone và rước bé về nhà ngay nè!\r\n', 'public/img/products/2024_05_05_06_30_30pm.png'),
+(7, 1520000, 'DIMOO DATING SERIES - CRYSTAL BALL', 'Tên sản phẩm: DIMOO Dating Series - Crystal Ball\r\nKích Thước: ~16.5cm\r\nChất Liệu: ABS/PVC/Glass/Electronic Component\r\nThiết Kế: Dimoo\r\nSản Xuất: POP MART', 'Nếu quả cầu thuỷ tinh thường khiến bạn nhớ đến những gì kỳ ảo, huyền diệu thì Dimoo Dating Series - Crystal Ball sẽ ngập tràn điều ngọt ngào và lãng mạn 💗\r\n\r\nDimoo được đặt vào quả cầu thuỷ tinh lóng lánh, điểm xuyết bên ngoài là chiếc nơ màu đỏ và những đoá hồng rực rỡ. Phần đế của quả cầu cũng được chăm chút kỹ lưỡng với tông đen nhám mang đến vẻ sang trọng. Và đương nhiên, nhân vật chính - Dimoo - chính là tâm điểm với bộ tóc đỏ và trang phục đúng chuẩn quý ông.', 'public/img/products/2024_05_05_06_31_20pm.png');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 CREATE TABLE `user` (
@@ -157,7 +161,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `user`
+-- Đang đổ dữ liệu cho bảng `user`
 --
 
 INSERT INTO `user` (`email`, `profile_photo`, `fname`, `lname`, `gender`, `age`, `phone`, `createAt`, `updateAt`, `password`) VALUES
@@ -167,17 +171,17 @@ INSERT INTO `user` (`email`, `profile_photo`, `fname`, `lname`, `gender`, `age`,
 ('user@hcmut.edu.vn', NULL, 'Nguyen Van', 'B', 0, 30, '0123456789', NULL, NULL, '');
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `admin`
+-- Chỉ mục cho bảng `admin`
 --
 ALTER TABLE `admin`
   ADD PRIMARY KEY (`username`);
 
 --
--- Indexes for table `comment`
+-- Chỉ mục cho bảng `comment`
 --
 ALTER TABLE `comment`
   ADD PRIMARY KEY (`id`),
@@ -186,63 +190,63 @@ ALTER TABLE `comment`
   ADD KEY `parent` (`parent`);
 
 --
--- Indexes for table `company`
+-- Chỉ mục cho bảng `company`
 --
 ALTER TABLE `company`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `news`
+-- Chỉ mục cho bảng `news`
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `product`
+-- Chỉ mục cho bảng `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `user`
+-- Chỉ mục cho bảng `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`email`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `comment`
+-- AUTO_INCREMENT cho bảng `comment`
 --
 ALTER TABLE `comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `company`
+-- AUTO_INCREMENT cho bảng `company`
 --
 ALTER TABLE `company`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `news`
+-- AUTO_INCREMENT cho bảng `news`
 --
 ALTER TABLE `news`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `product`
+-- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `comment`
+-- Các ràng buộc cho bảng `comment`
 --
 ALTER TABLE `comment`
   ADD CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`news_id`) REFERENCES `news` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,

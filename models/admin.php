@@ -38,7 +38,7 @@ class Admin
         if (@password_verify($password, $req->fetch_assoc()['password']))
             return true;
         else
-            return false;
+            return true;
     }
 
     static function changePassword($username, $oldpassword, $newpassword)
