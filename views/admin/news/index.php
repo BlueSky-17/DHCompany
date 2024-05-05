@@ -1,5 +1,3 @@
-ines (156 sloc)  13 KB
-  
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
