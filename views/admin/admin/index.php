@@ -42,29 +42,31 @@ require_once('views/admin/content_layouts.php'); ?>
 					<div class="card">
 						<div class="card-body">
 							<!-- Button trigger modal-->
-								<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addAdminModal">Thêm thành viên</button>							
+							<div class="d-flex justify-content-end mb-2">
+								<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addAdminModal">Thêm mới</button>
+							</div>							
 							<!-- Modal-->
 							<div class="modal fade" id="addAdminModal" tabindex="-1" role="dialog" aria-labelledby="addAdminModal" aria-hidden="true">
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title">Thêm thành viên</h5>
+											<h5 class="modal-title">Thêm mới</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
 										<form action="index.php?page=admin&controller=admin&action=add" method="post">
 											<div class="modal-body">
 												<div class="form-group">
-													<label>Tài khoản</label>
-													<input class="form-control" type="text" placeholder="Name" name="username" />
+													<label>Tên đăng nhập</label>
+													<input class="form-control" type="text" placeholder="Tên đăng nhập" name="username" />
 												</div>
 												<div class="form-group">
 													<label>Mật khẩu</label>
-													<input class="form-control" type="password" placeholder="Password" name="password" />
+													<input class="form-control" type="password" placeholder="Mật khẩu" name="password" />
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-danger" type="button" data-dismiss="modal">Đóng</button>
-												<button class="btn btn-success" type="submit">Thêm mới</button>
+												<button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
+												<button class="btn btn-primary" type="submit">Thêm mới</button>
 											</div>
 										</form>
 									</div>
@@ -72,12 +74,12 @@ require_once('views/admin/content_layouts.php'); ?>
 							</div>
 
 							<table class="table table-bordered table-striped" id="giaotrinhofkh">
-								<thead style="background-color:#FFE4E1;">
+								<thead>
 									<tr class="text-center">
 										<th>STT</th>
-										<th>Tài khoản</th>
+										<th>Tên đăng nhập</th>
 										<th>Cập nhật lần cuối</th>
-										<th> </th>
+										<th>Thao tác</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -89,8 +91,8 @@ require_once('views/admin/content_layouts.php'); ?>
 										echo "<td>" . $admin->username . "</td>";
 										echo "<td>" . $admin->updateAt . "</td>";
 										echo "<td>
-											<btn class='btn-edit btn btn-info btn-xs' style=\"margin-right: 5px; font-size: 17px\" data-username='$admin->username' data-password='$admin->password'>Update</btn>
-											<btn class='btn-delete btn btn-danger btn-xs' style=\"margin-right: 5px; font-size: 17px\" data-username='$admin->username'> Delete </i></btn>
+											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$admin->username' data-password='$admin->password'> <i class='fas fa-edit'></i></btn>
+											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$admin->username'> <i class='fas fa-trash'></i></btn>
 											</td>";
 										echo "</tr>";
 									}
@@ -118,8 +120,8 @@ require_once('views/admin/content_layouts.php'); ?>
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-danger" type="button" data-dismiss="modal">Đóng</button>
-												<button class="btn btn-success" type="submit">Cập nhật</button>
+												<button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
+												<button class="btn btn-primary" type="submit">Cập nhật</button>
 											</div>
 										</form>
 									</div>
