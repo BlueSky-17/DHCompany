@@ -25,7 +25,7 @@ class LoginController extends BaseController
 				$_SESSION["user"] = $username;
 			header("Location: index.php?page=admin&controller=layouts&action=index");
 		} else {
-			$err = "Sai tài khoản hoặc mật khẩu";
+			$err = "Thông tin đăng nhập không chính xác";
 			$data = array('err' => $err);
 			$this->render('index', $data);
 		}
