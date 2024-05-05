@@ -7,7 +7,8 @@ class BaseController
   function render($file, $data = array())
   {
     // Kiểm tra file gọi đến có tồn tại hay không?
-    $view_file = 'views/main/' . $this->folder . '/' . $file . '.php';
+    $view_file = 'views/normal/' . $this->folder . '/' . $file . '.php';
+    // $view_file = 'views/main/' . $this->folder . '.php';
     if (is_file($view_file)) {
       // Nếu tồn tại file đó thì tạo ra các biến chứa giá trị truyền vào lúc gọi hàm
       extract($data);
@@ -19,7 +20,7 @@ class BaseController
       require_once('views/admin/basic_layouts.php');
     } else {
       // Nếu file muốn gọi ra không tồn tại thì chuyển hướng đến trang báo lỗi.
-      header('Location: index.php?page=main&controller=layouts&action=error');
+      header('Location: index.php?user=normal&controller=layouts&action=error');
     }
   }
 }

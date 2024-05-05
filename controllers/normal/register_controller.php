@@ -1,5 +1,5 @@
 <?php
-require_once('controllers/main/base_controller.php');
+require_once('controllers/normal/base_controller.php');
 require_once('models/user.php');
 
 class RegisterController extends BaseController
@@ -25,7 +25,7 @@ class RegisterController extends BaseController
 		$password = $_POST['password'];
 		echo $fname . $lname . $age . $gender . $phone . $email . $password;
 		User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
-		header('Location: index.php?page=main&controller=layouts&action=index');
+		header('Location: index.php?user=normal&controller=layouts&action=index');
 	}
 
 	public function editInfo()
@@ -67,7 +67,7 @@ class RegisterController extends BaseController
 		move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 		// Update
 		$change_info = User::update($email, $target_file, $fname, $lname, $gender, $age, $phone);
-		header('Location: index.php?page=main&controller=layouts&action=index');
+		header('Location: index.php?user=normal&controller=layouts&action=index');
 	}
 
 	public function editPass()

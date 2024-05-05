@@ -21,7 +21,7 @@ class CompanyController extends BaseController
 		$name = $_POST['name'];
 		$address = $_POST['address'];
 		$add_new = Company::insert($name, $address);
-		header('Location: index.php?page=admin&controller=company&action=index');
+		header('Location: index.php?user=admin&controller=company&action=index');
 	}
 
 	public function edit()
@@ -30,13 +30,13 @@ class CompanyController extends BaseController
 		$name = $_POST['name'];
 		$address = $_POST['address'];
 		$change_pass = Company::update($id, $name, $address);
-		header('Location: index.php?page=admin&controller=company&action=index');
+		header('Location: index.php?user=admin&controller=company&action=index');
 	}
 
 	public function delete()
 	{
 		$id = $_POST['id'];
 		$delete_user = Company::delete($id);
-		header('Location: index.php?page=admin&controller=company&action=index');
+		header('Location: index.php?user=admin&controller=company&action=index');
 	}
 }

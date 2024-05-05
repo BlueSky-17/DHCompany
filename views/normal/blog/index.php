@@ -1,5 +1,5 @@
 <?php
-  include_once('views/main/navbar.php');
+  include_once('views/normal/navbar.php');
 ?>
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
@@ -342,7 +342,7 @@
 
 </main><!-- End #main -->
 <?php
-include_once('views/main/footer.php');
+include_once('views/normal/footer.php');
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

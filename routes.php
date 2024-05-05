@@ -1,7 +1,7 @@
 <?php
-$pages = array(
+$users = array(
   'error' => ['errors'],
-  'main' => ['layouts', 'about', 'services', 'blog', 'archive', 'contact', 'login', 'register'],
+  'normal' => ['layouts', 'about', 'services', 'blog', 'archive', 'contact', 'login', 'register'],
   'admin' => ['layouts', 'members', 'products', 'news', 'comments', 'admin', 'login', 'user', 'company']
 );
 $controllers = array(
@@ -17,7 +17,7 @@ $controllers = array(
   'company' => ['index', 'add', 'edit', 'delete'],
   'login' => ['index', 'check', 'logout'],
 
-  //Main controller
+  //Normal user controller
   'about' => ['index'],
   'blog' => ['index'],
   'archive' => ['index'],
@@ -30,24 +30,23 @@ $controllers = array(
 
 // Nếu các tham số nhận được từ URL không hợp lệ (không thuộc list controller và action có thể gọi
 // thì trang báo lỗi sẽ được gọi ra.
-if (!array_key_exists($page, $pages) || !array_key_exists($controller, $controllers) || !in_array($action, $controllers[$controller])) {
-  $page = 'error';
+if (!array_key_exists($user, $users) || !array_key_exists($controller, $controllers) || !in_array($action, $controllers[$controller])) {
+  $user = 'error';
   $controller = 'errors';
   $action = 'index';
 }
-if($page=='error'){
-  $controller = 'errors';
-  $action = 'index';
-}
-if($page=='error'){
-    $controller = 'errors';
-    $action = 'index';
-}
-
 
 // Nhúng file định nghĩa controller vào để có thể dùng được class định nghĩa trong file đó
-include_once('controllers/' .$page ."/" . $controller . '_controller.php');
+if ($user == 'error') {
+  include_once('controllers/errorsController.php');
+}
+else {
+  include_once('controllers/' .$user ."/" . $controller . '_controller.php');
+}
+// include_once('controllers/' .$user ."/" . $controller . '_controller.php');
+
 // Tạo ra tên controller class từ các giá trị lấy được từ URL sau đó gọi ra để hiển thị trả về cho người dùng.
 $klass = str_replace('_', '', ucwords($controller, '_')) . 'Controller';
 $controller = new $klass;
 $controller->$action();
+?>

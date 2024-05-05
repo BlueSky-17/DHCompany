@@ -21,7 +21,7 @@ class NewsController extends BaseController
         $content = $_POST['content'];
         $title = $_POST['title'];
         News::insert($title, $description, $content);
-        header('Location: index.php?page=admin&controller=news&action=index');
+        header('Location: index.php?user=admin&controller=news&action=index');
     }
     public function edit(){
         $id = $_POST['id'];
@@ -29,16 +29,16 @@ class NewsController extends BaseController
         $content = $_POST['content'];
         $title = $_POST['title'];
         News::update($id,$title, $description, $content);
-        header('Location: index.php?page=admin&controller=news&action=index');
+        header('Location: index.php?user=admin&controller=news&action=index');
     }
     public function delete(){
         $id = $_POST['id'];
         News::delete($id);
-        header('Location: index.php?page=admin&controller=news&action=index');
+        header('Location: index.php?user=admin&controller=news&action=index');
     }
     public function hide(){
         $id = $_POST['id'];
         News::hide($id);
-        header('Location: index.php?page=admin&controller=news&action=index');
+        header('Location: index.php?user=admin&controller=news&action=index');
     }
 }

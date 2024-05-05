@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-	header("Location: index.php?page=admin&controller=login&action=index");
+	header("Location: index.php?user=admin&controller=login&action=index");
 }
 ?>
 <?php
@@ -53,7 +53,7 @@ require_once('views/admin/content_layouts.php'); ?>
 											<h5 class="modal-title">Thêm khách hàng</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<form action="index.php?page=admin&controller=user&action=add" enctype="multipart/form-data" method="post">
+										<form action="index.php?user=admin&controller=user&action=add" enctype="multipart/form-data" method="post">
 											<div class="modal-body">
 												<div class="form-group">
 													<div class="row"> </div>
@@ -167,7 +167,7 @@ require_once('views/admin/content_layouts.php'); ?>
 											<h5 class="modal-title">Chỉnh sửa</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<form action="index.php?page=admin&controller=user&action=editInfo" enctype="multipart/form-data" method="post">
+										<form action="index.php?user=admin&controller=user&action=editInfo" enctype="multipart/form-data" method="post">
 											<div class="modal-body">
 												<input type="hidden" name="email">
 												<div class="row">
@@ -244,7 +244,7 @@ require_once('views/admin/content_layouts.php'); ?>
 											<h5 class="modal-title">Chỉnh sửa</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<form action="index.php?page=admin&controller=user&action=editPass" method="post">
+										<form action="index.php?user=admin&controller=user&action=editPass" method="post">
 											<div class="modal-body">
 												<input type="hidden" name="id" />
 												<div class="form-group">
@@ -272,7 +272,7 @@ require_once('views/admin/content_layouts.php'); ?>
 											<h5 class="modal-title">Xóa</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<form action="index.php?page=admin&controller=user&action=delete" method="post">
+										<form action="index.php?user=admin&controller=user&action=delete" method="post">
 											<div class="modal-body">
 												<input type="hidden" name="email" />
 												<input type="hidden" name="img" />

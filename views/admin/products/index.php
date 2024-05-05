@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-	header("Location: index.php?page=admin&controller=login&action=index");
+	header("Location: index.php?user=admin&controller=login&action=index");
 }
 ?>
 
@@ -48,7 +48,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                     <div class="modal-header">
                                         <h5 class="modal-title">Thêm sản phẩm</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     </div>
-                                    <form id="form-add-student" action="index.php?page=admin&controller=products&action=add" enctype="multipart/form-data" method="post">
+                                    <form id="form-add-student" action="index.php?user=admin&controller=products&action=add" enctype="multipart/form-data" method="post">
                                         <div class="modal-body">
                                             <div> <label>Tên sản phẩm</label><input class="form-control" type="text" placeholder="Name" name="name" /></div>
                                             <div> <label>Giá</label><input class="form-control" type="number"  placeholder="Price" name="price" /></div>
@@ -120,7 +120,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Chỉnh sửa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form id="form-edit-student" action="index.php?page=admin&controller=products&action=edit" enctype="multipart/form-data" method="post">
+                                                <form id="form-edit-student" action="index.php?user=admin&controller=products&action=edit" enctype="multipart/form-data" method="post">
                                                     <div class="modal-body">
                                                         <div  class="col-12"><label>ID</label> <input class="form-control" type="text" placeholder="Name" name="id"  readonly/></div>
                                                         <div><label>Tên sản phẩm</label><input class="form-control" type="text" placeholder="Tên sản phẩm" name="name" /></div>
@@ -141,7 +141,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Xóa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=products&action=delete" method="post">
+                                                <form action="index.php?user=admin&controller=products&action=delete" method="post">
                                                     <div class="modal-body"><input type="hidden" name="id" />
                                                         <p>Bạn có chắc chắn muốn xóa sản phẩm này?</p>
                                                     </div>

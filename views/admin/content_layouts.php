@@ -21,7 +21,7 @@
           </a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a class="nav-link" href="index.php?page=admin&controller=login&action=logout">Logout</a>
+          <a class="nav-link" href="index.php?user=admin&controller=login&action=logout">Logout</a>
         </li>
       </ul>
     </nav>
@@ -40,43 +40,43 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!--Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=layouts&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=layouts&action=index">
                 <i class="nav-icon fas fa-fw fa-tachometer-alt"></i>
                 <p>Dashboard</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=company&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=company&action=index">
                 <i class="nav-icon fa fa-newspaper" aria-hidden="true"></i>
                 <p>Quản lý chi nhánh</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=admin&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=admin&action=index">
                 <i class="nav-icon fas fa-user-graduate"> </i>
                 <p>Quản lý thành viên</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=products&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=products&action=index">
                 <i class="nav-icon fas fa-cube"></i>
                 <p>Quản lý sản phẩm</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=news&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=news&action=index">
                 <i class="nav-icon fa fa-file" aria-hidden="true"></i>
                 <p>Quản lý bài viết</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=comments&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=comments&action=index">
                 <i class="nav-icon fas fa-comments"></i>
                 <p>Quản lý bình luận</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=user&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=user&action=index">
                 <i class="nav-icon fas fa-users-cog"></i>
                 <p>Liên hệ khách hàng</p>
               </a>

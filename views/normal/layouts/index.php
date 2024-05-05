@@ -1,5 +1,5 @@
 <?php
-  include_once('views/main/navbar.php');
+  include_once('views/normal/navbar.php');
 ?>
 <!-- ======= Hero Section ======= -->
 <section id="hero">
@@ -263,5 +263,5 @@
 </main><!-- End #main -->
 
 <?php
-include_once('views/main/footer.php');
+include_once('views/normal/footer.php');
 ?>

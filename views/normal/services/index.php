@@ -1,5 +1,5 @@
 <?php
-include_once('views/main/navbar.php');
+include_once('views/normal/navbar.php');
 ?>
 <main id="main">
   <!-- Modal -->
@@ -68,5 +68,5 @@ include_once('views/main/navbar.php');
 </main><!-- End #main -->
 
 <?php
-include_once('views/main/footer.php');
+include_once('views/normal/footer.php');
 ?>

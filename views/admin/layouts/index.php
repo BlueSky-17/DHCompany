@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-	header("Location: index.php?page=admin&controller=login&action=index");
+	header("Location: index.php?user=admin&controller=login&action=index");
 }
 ?>
 <?php
@@ -42,7 +42,7 @@ require_once('views/admin/content_layouts.php'); ?>
 			</div>
 			<div class="row">
 				<!-- Earnings (Monthly) Card Example -->
-				<a href="index.php?page=admin&controller=admin&action=index" class="col-xl-4 col-md-6 mb-4">
+				<a href="index.php?user=admin&controller=admin&action=index" class="col-xl-4 col-md-6 mb-4">
 					<div class="card border-left-primary shadow h-100 py-2">
 						<div class="row card-body justify-content-center">
 							<div class="row no-gutters align-items-center">
@@ -59,7 +59,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</a>
 
 				<!-- Earnings (Monthly) Card Example -->
-				<a href="index.php?page=admin&controller=comments&action=index" class="col-xl-4 col-md-6 mb-4">
+				<a href="index.php?user=admin&controller=comments&action=index" class="col-xl-4 col-md-6 mb-4">
 					<div class="card border-left-primary shadow h-100 py-2">
 						<div class="row card-body justify-content-center">
 							<div class="row no-gutters align-items-center">
@@ -76,7 +76,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</a>
 
 				<!-- Earnings (Monthly) Card Example -->
-				<a href="index.php?page=admin&controller=products&action=index" class="col-xl-4 col-md-6 mb-4">
+				<a href="index.php?user=admin&controller=products&action=index" class="col-xl-4 col-md-6 mb-4">
 					<div class="card border-left-primary shadow h-100 py-2">
 						<div class="row card-body justify-content-center">
 							<div class="row no-gutters align-items-center">
@@ -93,7 +93,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</a>
 
 				<!-- Earnings (Monthly) Card Example -->
-				<a href="index.php?page=admin&controller=news&action=index" class="col-xl-4 col-md-6 mb-4">
+				<a href="index.php?user=admin&controller=news&action=index" class="col-xl-4 col-md-6 mb-4">
 					<div class="card border-left-primary shadow h-100 py-2">
 						<div class="row card-body justify-content-center">
 							<div class="row no-gutters align-items-center">
@@ -110,7 +110,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</a>
 
 				<!-- Earnings (Monthly) Card Example -->
-				<a href="index.php?page=admin&controller=company&action=index" class="col-xl-4 col-md-6 mb-4">
+				<a href="index.php?user=admin&controller=company&action=index" class="col-xl-4 col-md-6 mb-4">
 					<div class="card border-left-primary shadow h-100 py-2">
 						<div class="row card-body justify-content-center">
 							<div class="row no-gutters align-items-center">
@@ -127,7 +127,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</a>
 
 				<!-- Earnings (Monthly) Card Example -->
-				<a href="index.php?page=admin&controller=user&action=index" class="col-xl-4 col-md-6 mb-4">
+				<a href="index.php?user=admin&controller=user&action=index" class="col-xl-4 col-md-6 mb-4">
 					<div class="card border-left-primary shadow h-100 py-2">
 						<div class="row card-body justify-content-center">
 							<div class="row no-gutters align-items-center">

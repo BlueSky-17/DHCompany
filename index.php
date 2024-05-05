@@ -1,28 +1,22 @@
 <?php
-// require_once('connection.php');
 
-if (isset($_GET['page'])) {
-	$page = $_GET['page'];
-
+if (isset($_GET['user'])) {
+	$user = $_GET['user'];
 	if (isset($_GET['controller'])) {
-
 		$controller = $_GET['controller'];
-
 		if (isset($_GET['action'])) {
 			$action = $_GET['action'];
 		} 
-
 		else {
 			$action = 'index';
 		}
-		
 	} else {
-		$page = 'error';
+		$user = 'error';
 	}
 }
 
 else {
-	$page = 'main';
+	$user = 'normal';
 	$controller = 'layouts';
 	$action = 'index';
 }

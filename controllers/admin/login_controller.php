@@ -23,7 +23,7 @@ class LoginController extends BaseController
 			session_start();
 			if (!isset($_SESSION["user"]))
 				$_SESSION["user"] = $username;
-			header("Location: index.php?page=admin&controller=layouts&action=index");
+			header("Location: index.php?user=admin&controller=layouts&action=index");
 		} else {
 			$err = "Thông tin đăng nhập không chính xác";
 			$data = array('err' => $err);
@@ -36,6 +36,6 @@ class LoginController extends BaseController
 		session_start();
 		unset($_SESSION["user"]);
 		session_destroy();
-		header("Location: index.php?page=admin&controller=login&action=index");
+		header("Location: index.php?user=admin&controller=login&action=index");
 	}
 }

@@ -40,7 +40,7 @@
         <div class="container-login100" style="background-image: url('public/img/background_1.jpg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
-                <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
+                <form action="index.php?user=normal&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
                     <span class="login100-form-title p-b-20">
                         <strong>Sign Up</strong>
@@ -133,13 +133,13 @@
 
                     <div class="txt1 text-center p-t-54 p-b-20">
                         <span>
-                            <a href="index.php?page=main&controller=login&action=index" style="color: grey;">Sign In</a>
+                            <a href="index.php?user=normal&controller=login&action=index" style="color: grey;">Sign In</a>
                         </span>
                     </div>
 
                     <div class="flex-col-c p-t-20">
                         <span class="txt1 p-b-0">
-                            <a href="index.php?page=main&controller=layouts&action=index" style="color: grey;">Return Home</a>
+                            <a href="index.php?user=normal&controller=layouts&action=index" style="color: grey;">Return Home</a>
                         </span>
                     </div>
 

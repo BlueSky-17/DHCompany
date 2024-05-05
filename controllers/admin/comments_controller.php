@@ -26,18 +26,18 @@ class CommentsController extends BaseController
         $news_id = $_POST['news_id'];
         $user_id = $_POST['user_id'];
         Comment::insert($content, $news_id, $user_id);
-        header('Location: index.php?page=admin&controller=comments&action=index');
+        header('Location: index.php?user=admin&controller=comments&action=index');
     }
     public function edit(){
         $id = $_POST['id'];
         $content = $_POST['title'];
         Comment::update($id, $content);
-        header('Location: index.php?page=admin&controller=comments&action=index');
+        header('Location: index.php?user=admin&controller=comments&action=index');
     }
     public function delete(){
         $id = $_POST['id'];
         Comment::delete($id);
-        header('Location: index.php?page=admin&controller=comments&action=index');
+        header('Location: index.php?user=admin&controller=comments&action=index');
     }
     public function hide(){
         $id = $_POST['id'];
@@ -48,6 +48,6 @@ class CommentsController extends BaseController
             Comment::unblock($id);
         }
 
-        header('Location: index.php?page=admin&controller=comments&action=index');
+        header('Location: index.php?user=admin&controller=comments&action=index');
     }
 }

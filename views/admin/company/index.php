@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-	header("Location: index.php?page=admin&controller=login&action=index");
+	header("Location: index.php?user=admin&controller=login&action=index");
 }
 ?>
 <?php
@@ -53,7 +53,7 @@ require_once('views/admin/content_layouts.php'); ?>
 											<h5 class="modal-title">Thêm chi nhánh</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<form action="index.php?page=admin&controller=company&action=add" method="post">
+										<form action="index.php?user=admin&controller=company&action=add" method="post">
 											<div class="modal-body">
 												<div class="form-group">
 													<label>Tên chi nhánh</label>
@@ -110,7 +110,7 @@ require_once('views/admin/content_layouts.php'); ?>
 											<h5 class="modal-title">Chỉnh sửa</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<form action="index.php?page=admin&controller=company&action=edit" method="post">
+										<form action="index.php?user=admin&controller=company&action=edit" method="post">
 											<div class="modal-body">
 												<input type="hidden" name="id" />
 												<div class="form-group">
@@ -141,7 +141,7 @@ require_once('views/admin/content_layouts.php'); ?>
 											<h5 class="modal-title">Xóa</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
-										<form action="index.php?page=admin&controller=company&action=delete" method="post">
+										<form action="index.php?user=admin&controller=company&action=delete" method="post">
 											<div class="modal-body">
 												<label>Chi nhánh: </label>
 												<input name="name" readonly/>

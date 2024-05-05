@@ -28,7 +28,7 @@
 						unset($err);
 					}
 				?>
-				<form action="index.php?page=admin&controller=login&action=check" method="post">
+				<form action="index.php?user=admin&controller=login&action=check" method="post">
 					<div class="input-group mb-3">
 						<input class="form-control" type="text" placeholder="Tài khoản" name="username">
 						<div class="input-group-append">

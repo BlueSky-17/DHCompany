@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-	header("Location: index.php?page=admin&controller=login&action=index");
+	header("Location: index.php?user=admin&controller=login&action=index");
 }
 ?>
 <?php
@@ -49,7 +49,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                     <div class="modal-header">
                                         <h5 class="modal-title">Thêm mới bình luận</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     </div>
-                                    <form action="index.php?page=admin&controller=comments&action=add" enctype="multipart/form-data" method="post">
+                                    <form action="index.php?user=admin&controller=comments&action=add" enctype="multipart/form-data" method="post">
                                         <div class="modal-body">
                                         <div class="form-group"><label>Nội dung</label><input class="form-control" type="text" placeholder="Nội dung" name="content" /></div>
                                            <div class="form-group"><label>ID bài viết</label>
@@ -137,7 +137,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Ẩn hay hiện bình luận</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=comments&action=hide" method="post">
+                                                <form action="index.php?user=admin&controller=comments&action=hide" method="post">
                                                     <div class="modal-body"><input type="hidden" name="id" />
                                                         <p>Bản có chắc chắn?</p>
                                                     </div>
@@ -152,7 +152,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Xóa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=comments&action=delete" method="post">
+                                                <form action="index.php?user=admin&controller=comments&action=delete" method="post">
                                                     <div class="modal-body"><input type="hidden" name="id" />
                                                         <p>Bạn có chắc chắn muốn xóa bình luận?</p>
                                                     </div>
@@ -167,7 +167,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Chỉnh sửa bình luận</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=comments&action=edit" enctype="multipart/form-data" method="post">
+                                                <form action="index.php?user=admin&controller=comments&action=edit" enctype="multipart/form-data" method="post">
                                                     <div class="modal-body">
                                                         <div class="row">
                                                              <div  class="col-12"><label>ID</label> <input class="form-control" type="text" placeholder="Name" name="id"  readonly/></div>   

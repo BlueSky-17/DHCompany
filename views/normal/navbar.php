@@ -66,7 +66,7 @@
           <h5 class="modal-title">Chỉnh sửa</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         </div>
-        <form action="index.php?page=main&controller=register&action=editInfo" enctype="multipart/form-data" method="post">
+        <form action="index.php?user=normal&controller=register&action=editInfo" enctype="multipart/form-data" method="post">
           <div class="modal-body">
             <input type="hidden" name="email">
             <div class="row">
@@ -147,17 +147,17 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a href="index.php?page=main&controller=layouts&action=index">Trang chủ</a></li>
-          <li><a href="index.php?page=main&controller=about&action=index">Chúng tôi</a></li>
-          <li><a href="index.php?page=main&controller=services&action=index">Sản phẩm</a></li>
-          <li><a href="index.php?page=main&controller=blog&action=index">Tin tức</a></li>
-          <li><a href="index.php?page=main&controller=archive&action=index">Thành tựu</a></li>
-          <li><a href="index.php?page=main&controller=contact&action=index">Kết nối</a></li>
+          <li><a href="index.php?user=normal&controller=layouts&action=index">Trang chủ</a></li>
+          <li><a href="index.php?user=normal&controller=about&action=index">Chúng tôi</a></li>
+          <li><a href="index.php?user=normal&controller=services&action=index">Sản phẩm</a></li>
+          <li><a href="index.php?user=normal&controller=blog&action=index">Tin tức</a></li>
+          <li><a href="index.php?user=normal&controller=archive&action=index">Thành tựu</a></li>
+          <li><a href="index.php?user=normal&controller=contact&action=index">Kết nối</a></li>
           <?php
           if (!isset($_SESSION["guest"])){
             echo '
-              <li><a href="index.php?page=main&controller=register&action=index" class="box-arrow-in-right"><i class="bu bi-file-lock-fill"></i></a></li> <!-- Đăng ký -->
-              <li><a href="index.php?page=main&controller=login&action=index" class="box-arrow-in-right"><i class="bu bi-person-lines-fill"></i></a></li> <!-- Đăng nhập -->
+              <li><a href="index.php?user=normal&controller=register&action=index" class="box-arrow-in-right"><i class="bu bi-file-lock-fill"></i></a></li> <!-- Đăng ký -->
+              <li><a href="index.php?user=normal&controller=login&action=index" class="box-arrow-in-right"><i class="bu bi-person-lines-fill"></i></a></li> <!-- Đăng nhập -->
             ';
           }
           else{
@@ -166,7 +166,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;" src="' . (file_exists($data->profile_photo) ? $data->profile_photo:"public/dist/img/avatar4.png") . '"></a></li>
-            <li><a href="index.php?page=main&controller=login&action=logout" class="box-arrow-in-right"><i class="bu bi-box-arrow-right"></i></a></li> <!-- Đăng xuất -->
+            <li><a href="index.php?user=normal&controller=login&action=logout" class="box-arrow-in-right"><i class="bu bi-box-arrow-right"></i></a></li> <!-- Đăng xuất -->
             ';
           }
           ?>

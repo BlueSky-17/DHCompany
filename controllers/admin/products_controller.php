@@ -44,7 +44,7 @@ class ProductsController extends BaseController
         }
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
         Product::insert($name, $price, $description, $content, $target_file);
-        header('Location: index.php?page=admin&controller=products&action=index');
+        header('Location: index.php?user=admin&controller=products&action=index');
     }
     public function edit(){
         $id = $_POST['id'];
@@ -60,7 +60,7 @@ class ProductsController extends BaseController
         {
             Product::update($id, $name, $price, $description, $content, $urlcurrent);
             echo "Dữ liệu upload bị lỗi";
-            header('Location: index.php?page=admin&controller=products&action=index');
+            header('Location: index.php?user=admin&controller=products&action=index');
             die;
         }
         // Khi có hình ảnh khác được upload
@@ -89,7 +89,7 @@ class ProductsController extends BaseController
             unlink($file_pointer);
             move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
             Product::update($id, $name, $price, $description, $content, $target_file);
-            header('Location: index.php?page=admin&controller=products&action=index');
+            header('Location: index.php?user=admin&controller=products&action=index');
         }
     }
     public function delete(){
@@ -97,6 +97,6 @@ class ProductsController extends BaseController
         $urlcurrent = Product::get((int)$id)->img;
         unlink($urlcurrent);
         Product::delete($id);
-        header('Location: index.php?page=admin&controller=products&action=index');
+        header('Location: index.php?user=admin&controller=products&action=index');
     }
 }

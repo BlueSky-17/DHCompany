@@ -1,5 +1,5 @@
 <?php
-  include_once('views/main/navbar.php');
+  include_once('views/normal/navbar.php');
 ?>
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
@@ -7,8 +7,8 @@
     <div class="d-flex justify-content-between align-items-center">
       <h1 style="color: white;" class="mt-4"><strong>CHÚNG TÔI</strong></h1>
       <ol>
-        <li><a href=" index.php?page=main&controller=layouts&action=index">Trang chủ</a></li>
-        <li><a href="index.php?page=main&controller=about&action=index">Chúng tôi</a></li>
+        <li><a href=" index.php?user=normal&controller=layouts&action=index">Trang chủ</a></li>
+        <li><a href="index.php?user=normal&controller=about&action=index">Chúng tôi</a></li>
       </ol>
     </div>
 
@@ -245,5 +245,5 @@
 
 </main><!-- End #main -->
 <?php
-include_once('views/main/footer.php');
+include_once('views/normal/footer.php');
 ?>

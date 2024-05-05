@@ -54,7 +54,7 @@ class UserController extends BaseController
 		move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 		// Add new
 		$add_new = User::insert($email, $target_file, $fname, $lname, $gender, $age, $phone, $password);
-		header('Location: index.php?page=admin&controller=user&action=index');
+		header('Location: index.php?user=admin&controller=user&action=index');
 	}
 
 	public function editInfo()
@@ -95,7 +95,7 @@ class UserController extends BaseController
 		move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 		// Update
 		$change_info = User::update($email, $target_file, $fname, $lname, $gender, $age, $phone);
-		header('Location: index.php?page=admin&controller=user&action=index');
+		header('Location: index.php?user=admin&controller=user&action=index');
 	}
 
 	public function editPass()
@@ -105,7 +105,7 @@ class UserController extends BaseController
 		echo $email . " " . $newpassword .  "\n";
 		$change_pass = User::changePassword_($email, $newpassword);
 		echo "change_pass";
-		header('Location: index.php?page=admin&controller=user&action=index');
+		header('Location: index.php?user=admin&controller=user&action=index');
 	}
 
 	public function delete()
@@ -114,6 +114,6 @@ class UserController extends BaseController
 		$urlcurrent = $_POST['img'];
 		unlink($urlcurrent);
 		$delete_user = User::delete($email);
-		header('Location: index.php?page=admin&controller=user&action=index');
+		header('Location: index.php?user=admin&controller=user&action=index');
 	}
 }

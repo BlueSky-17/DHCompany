@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION["user"])) {
-	header("Location: index.php?page=admin&controller=login&action=index");
+	header("Location: index.php?user=admin&controller=login&action=index");
 }
 ?>
 <?php
@@ -48,7 +48,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                     <div class="modal-header">
                                         <h5 class="modal-title">Thêm mới bài viết</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                     </div>
-                                    <form id="form-add-student" action="index.php?page=admin&controller=news&action=add" enctype="multipart/form-data" method="post">
+                                    <form id="form-add-student" action="index.php?user=admin&controller=news&action=add" enctype="multipart/form-data" method="post">
                                         <div class="modal-body">
                                            <div class="form-group"> <label>Mô tả</label> <textarea class="form-control" placeholder="Mô tả" name="description" rows="5"></textarea></div>
                                             <div class="form-group"> <label>Nội dung</label> <textarea class="form-control" placeholder="Nội dung" name="content" rows="10"></textarea></div>
@@ -121,7 +121,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Chỉnh sửa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=news&action=edit" enctype="multipart/form-data" method="post">
+                                                <form action="index.php?user=admin&controller=news&action=edit" enctype="multipart/form-data" method="post">
                                                     <div class="modal-body">
                                                          <div  class="col-12"><label>ID</label> <input class="form-control" type="text" placeholder="Name" name="id"  readonly/></div>                  
                                                         <div class="form-group"> <label>Mô tả</label> <textarea class="form-control" name="description" rows="5"></textarea></div>
@@ -139,7 +139,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Xóa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=news&action=delete" method="post">
+                                                <form action="index.php?user=admin&controller=news&action=delete" method="post">
                                                     <div class="modal-body">
                                                         <input type="hidden" name="id" />
                                                         <p>Bạn có chắc chắn xóa bài viết này</p>
@@ -156,7 +156,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Hiện hay ẩn bài viết</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=news&action=hide" method="post">
+                                                <form action="index.php?user=admin&controller=news&action=hide" method="post">
                                                     <div class="modal-body"><input type="hidden" name="id" />
                                                         <p>Bạn đã chắc chắn?</p>
                                                     </div>
