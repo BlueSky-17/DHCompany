@@ -54,7 +54,7 @@
             <li class="nav-item">
               <a class="nav-link" href="index.php?page=admin&controller=admin&action=index">
                 <i class="nav-icon fas fa-user-graduate"> </i>
-                <p>Quản lý Thành viên</p>
+                <p>Quản lý thành viên</p>
               </a>
             </li>
             <li class="nav-item">
