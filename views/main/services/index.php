@@ -35,7 +35,7 @@ include_once('views/main/navbar.php');
       <div class="d-flex justify-content-between align-items-center">
         <h1 style="color: white;" class="mt-4"><strong>SẢN PHẨM</strong></h1>
         <ol>
-          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.php">Trang chủ</a></li>
           <li>Sản phẩm</li>
         </ol>
       </div>
