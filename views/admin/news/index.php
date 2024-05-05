@@ -24,7 +24,7 @@ require_once('views/admin/content_layouts.php'); ?>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
                         <li class="breadcrumb-item active">Quản lý bài viết</li>
                     </ol>
                 </div>
@@ -143,24 +143,32 @@ require_once('views/admin/content_layouts.php'); ?>
                                                     <div class="modal-body">
                                                         <input type="hidden" name="id" />
                                                         <p>Bạn có chắc chắn xóa bài viết này</p>
-                                                        <input readonly name=""/>
                                                     </div>
-                                                    <div class="modal-footer"><button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-danger btn-outline-light" type="submit">Xóa</button></div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary btn-outline-light" type="button" data-dismiss="modal">Đóng</button>
+                                                        <button class="btn btn-danger btn-outline-light" type="submit">Xóa</button>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal fade" id="HideStudentModal" tabindex="-1" role="dialog" aria-labelledby="HideStudentModal" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
-                                            <div class="modal-content bg-danger">
+                                            <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title">Hiện hay ẩn bài viết</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                    <h5 class="modal-title">Ẩn/ hiện bài viết</h5>
+                                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
                                                 </div>
                                                 <form action="index.php?user=admin&controller=news&action=hide" method="post">
                                                     <div class="modal-body"><input type="hidden" name="id" />
                                                         <p>Bạn đã chắc chắn?</p>
                                                     </div>
-                                                    <div class="modal-footer"><button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-danger btn-outline-light" type="submit">Cập nhật</button></div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary btn-outline-light" type="button" data-dismiss="modal">Hủy</button>
+                                                        <button class="btn btn-danger btn-outline-light" type="submit">Thay đổi</button>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>

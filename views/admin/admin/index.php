@@ -26,8 +26,8 @@ require_once('views/admin/content_layouts.php'); ?>
 				</div>
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active">Quản lý Thành viên</li>
+						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+						<li class="breadcrumb-item active">Quản lý thành viên</li>
 					</ol>
 				</div>
 			</div>
@@ -130,18 +130,18 @@ require_once('views/admin/content_layouts.php'); ?>
 
 							<div class="modal fade" id="DeleteAdminModal" tabindex="-1" role="dialog" aria-labelledby="DeleteAdminModal" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content bg-danger">
+									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title">Xóa</h5>
+											<h5 class="modal-title">Xóa thành viên</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
 										<form action="index.php?user=admin&controller=admin&action=delete" method="post">
 											<div class="modal-body">
-												<input type="hidden" name="username" />
-												<p>Bạn chắc chưa ?</p>
+												<p>Bạn sẽ xóa tài khoản sau:</p>
+												<input readonly name="username" />
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng lại</button>
+												<button class="btn btn-secondary btn-outline-light" type="button" data-dismiss="modal">Đóng lại</button>
 												<button class="btn btn-danger btn-outline-light" type="submit">Xác nhận</button>
 											</div>
 										</form>

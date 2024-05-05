@@ -25,7 +25,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</div>
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
 						<li class="breadcrumb-item active">Quản lý bình luận</li>
 					</ol>
 				</div>
@@ -133,22 +133,25 @@ require_once('views/admin/content_layouts.php'); ?>
                                     </tbody>
                                     <div class="modal fade" id="HideStudentModal" tabindex="-1" role="dialog" aria-labelledby="HideStudentModal" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
-                                            <div class="modal-content bg-danger">
+                                            <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Ẩn hay hiện bình luận</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
                                                 <form action="index.php?user=admin&controller=comments&action=hide" method="post">
                                                     <div class="modal-body"><input type="hidden" name="id" />
-                                                        <p>Bản có chắc chắn?</p>
+                                                        <p>Bạn có chắc chắn?</p>
                                                     </div>
-                                                    <div class="modal-footer"><button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-danger btn-outline-light" type="submit">Cập nhật</button></div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary btn-outline-light" type="button" data-dismiss="modal">Đóng</button>
+                                                        <button class="btn btn-danger btn-outline-light" type="submit">Cập nhật</button>
+                                                    </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal fade" id="DeleteStudentModal" tabindex="-1" role="dialog" aria-labelledby="DeleteStudentModal" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
-                                            <div class="modal-content bg-danger">
+                                            <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Xóa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
@@ -156,7 +159,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                     <div class="modal-body"><input type="hidden" name="id" />
                                                         <p>Bạn có chắc chắn muốn xóa bình luận?</p>
                                                     </div>
-                                                    <div class="modal-footer"><button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-danger btn-outline-light" type="submit">Xóa</button></div>
+                                                    <div class="modal-footer"><button class="btn btn-secondary btn-outline-light" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-danger btn-outline-light" type="submit">Xóa</button></div>
                                                 </form>
                                             </div>
                                         </div>
