@@ -22,12 +22,12 @@ require_once('views/admin/content_layouts.php'); ?>
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Quản lý Thông tin trang public</h1>
+					<h1>Quản lý thông tin chi nhánh</h1>
 				</div>
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active">Thông tin trang public</li>
+						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+						<li class="breadcrumb-item active">Thông tin chi nhánh</li>
 					</ol>
 				</div>
 			</div>
@@ -42,13 +42,13 @@ require_once('views/admin/content_layouts.php'); ?>
 					<div class="card">
 						<div class="card-body">
 							<!-- Button trigger modal-->
-							<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addCompanyModal">Thêm mới</button>
+							<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addCompanyModal">Thêm chi nhánh</button>
 							<!-- Modal-->
 							<div class="modal fade" id="addCompanyModal" tabindex="-1" role="dialog" aria-labelledby="addCompanyModal" aria-hidden="true">
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title">Thêm mới</h5>
+											<h5 class="modal-title">Thêm chi nhánh</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
 										<form action="index.php?page=admin&controller=company&action=add" method="post">
@@ -63,17 +63,17 @@ require_once('views/admin/content_layouts.php'); ?>
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-												<button class="btn btn-primary" type="submit">Thêm mới</button>
+												<button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
+												<button class="btn btn-primary" type="submit">Xác nhận</button>
 											</div>
 										</form>
 									</div>
 								</div>
 							</div>
 
-							<table class="table table-bordered table-striped" id="tab-company">
+							<table class="table table-bordered table-striped table-hover" id="tab-company">
 								<thead>
-									<tr class="text-center">
+									<tr class="text-center table-info">
 										<th>STT</th>
 										<th>Tên chi nhánh</th>
 										<th>Địa chỉ chi nhánh</th>
@@ -83,17 +83,19 @@ require_once('views/admin/content_layouts.php'); ?>
 								</thead>
 								<tbody>
 									<?php
+									$counter = 1;
 									foreach ($company as $company) {
 										echo "<tr class='text-center'>";
-										echo "<td>" . $company->id . "</td>";
+										echo "<td>" . $counter . "</td>";
 										echo "<td>" . $company->name . "</td>";
 										echo "<td>" . $company->address . "</td>";
 										echo "<td>" . $company->updateAt . "</td>";
 										echo "<td>
 											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-id=$company->id data-name='$company->name' data-address='$company->address'> <i class='fas fa-edit'></i></btn>
-											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-id=$company->id> <i class='fas fa-trash'></i></btn>
+											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-id=$company->id data-name='$company->name'> <i class='fas fa-trash'></i></btn>
 											</td>";
 										echo "</tr>";
+										$counter++;
 									}
 									?>
 								</tbody>
@@ -122,7 +124,7 @@ require_once('views/admin/content_layouts.php'); ?>
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
+												<button class="btn btn-secondary" type="button" data-dismiss="modal">Hủy</button>
 												<button class="btn btn-primary" type="submit">Cập nhật</button>
 											</div>
 										</form>
@@ -132,18 +134,20 @@ require_once('views/admin/content_layouts.php'); ?>
 
 							<div class="modal fade" id="DeleteCompanyModal" tabindex="-1" role="dialog" aria-labelledby="DeleteCompanyModal" aria-hidden="true">
 								<div class="modal-dialog" role="document">
-									<div class="modal-content bg-danger">
+									<div class="modal-content">
 										<div class="modal-header">
 											<h5 class="modal-title">Xóa</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
 										<form action="index.php?page=admin&controller=company&action=delete" method="post">
 											<div class="modal-body">
-												<input type="hidden" name="id" />
-												<p>Bạn chắc chưa ?</p>
+												<label>Chi nhánh: </label>
+												<input name="name" readonly/>
+												<p>Xác nhận xóa?</p>
+												<input type="hidden" name="id"/>
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng lại</button>
+												<button class="btn btn-secondary btn-outline-light" type="button" data-dismiss="modal">Đóng lại</button>
 												<button class="btn btn-danger btn-outline-light" type="submit">Xác nhận</button>
 											</div>
 										</form>

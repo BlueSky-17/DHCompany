@@ -46,15 +46,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=admin&action=index">
-                <i class="nav-icon fas fa-user-graduate"> </i>
-                <p>Quản lý thành viên</p>
+              <a class="nav-link" href="index.php?page=admin&controller=company&action=index">
+                <i class="nav-icon fa fa-newspaper" aria-hidden="true"></i>
+                <p>Quản lý chi nhánh</p>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=comments&action=index">
-                <i class="nav-icon fas fa-comments"></i>
-                <p>Quản lý bình luận</p>
+              <a class="nav-link" href="index.php?page=admin&controller=admin&action=index">
+                <i class="nav-icon fas fa-user-graduate"> </i>
+                <p>Quản lý Thành viên</p>
               </a>
             </li>
             <li class="nav-item">
@@ -70,15 +70,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=company&action=index">
-                <i class="nav-icon fa fa-newspaper" aria-hidden="true"></i>
-                <p>Quản lý chi nhánh</p>
+              <a class="nav-link" href="index.php?page=admin&controller=comments&action=index">
+                <i class="nav-icon fas fa-comments"></i>
+                <p>Quản lý bình luận</p>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.php?page=admin&controller=user&action=index">
                 <i class="nav-icon fas fa-users-cog"></i>
-                <p>Quản lý thông tin khách hàng</p>
+                <p>Liên hệ khách hàng</p>
               </a>
             </li>
           </ul>
