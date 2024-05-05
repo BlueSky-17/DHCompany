@@ -64,7 +64,7 @@ require_once('views/admin/content_layouts.php'); ?>
                         </div>
                             <div class="row"></div>
                                 <table id="TAB-product" class="table table-bordered table-striped"> 
-                                    <thead style="background-color:#cfe2f3;">
+                                    <thead style="background-color:#FFE4E1;">
                                         <tr  class="text-center">
                                             <th scope="col">STT</th>
                                             <th scope="col">Sản phẩm</th>
@@ -128,7 +128,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                                         <div  class="form-group"><label>Url Hình ảnh </label><input class="form-control" type="text"  name="imggg"  readonly/></div>
                                                         <div class="form-group"> <label> Hình ảnh </label>&nbsp <input type="file" name="fileToUpload" id="fileToUpload" /></div>
                                                     </div>
-                                                    <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-primary formedit" type="submit">Chỉnh sửa</button></div>
+                                                    <div class="modal-footer"><button class="btn btn-danger" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-success formedit" type="submit">Chỉnh sửa</button></div>
                                                 </form>
                                             </div>
                                         </div>
