@@ -12,7 +12,7 @@
               Phường 14, Quận 10<br>
               TP. Hồ Chí Minh, Việt Nam <br><br>
               <strong>Điện thoại:</strong>0965 890 400<br>
-              <strong>Email:</strong> start@sqt2.com.vn<br>
+              <strong>Email:</strong> start@dhcompany.com.vn<br>
             </p>
           </div>
 
@@ -38,9 +38,9 @@
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a href="https://zalo.me/lienhe.html">Hỗ
                   trợ tài khoản Zalo</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://www.vngcloud.vn/web/guest/trang-chu">CMC Social Listening</a></li>
+                  href="https://www.vngcloud.vn/web/guest/trang-chu">DHCompany Social Listening</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://zalopay.vn/trung-tam-ho-tro">CMC Chatbot</a></li>
+                  href="https://zalopay.vn/trung-tam-ho-tro">DHCompany Chatbot</a></li>
             </ul>
           </div>
 

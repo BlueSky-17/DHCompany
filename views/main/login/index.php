@@ -35,7 +35,7 @@
 <body>
 
   <div class="limiter">
-    <div class="container-login100" style="background-image: url('public/img/background.jpg');">
+    <div class="container-login100" style="background-image: url('public/img/background_1.jpg');">
       <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
         <form method="POST" class="login100-form validate-form" data-aos="fade-up">

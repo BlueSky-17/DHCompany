@@ -12,7 +12,7 @@
         <div class="carousel-container">
           <div class="carousel-content animate__animated animate__fadeInUp">
             <h2>Chào mừng đến với <span>DHCompany</span></h2>
-            <p>CMC SQT2 là thành viên của Tập đoàn CMC được thành lập với khát vọng đưa các sản phẩm, giải pháp và
+            <p>DHCompany được thành lập với khát vọng đưa các sản phẩm, giải pháp và
               dịch vụ CNTT-TT của Việt Nam ra thị trường quốc tế.</p>
           </div>
         </div>
@@ -23,7 +23,7 @@
         <div class="carousel-container">
           <div class="carousel-content animate__animated animate__fadeInUp">
             <h2>Thành công với DHCompany</h2>
-            <p>Được thành lập vào tháng 3 năm 2017 như một bước đi chiến lược của Tập đoàn để bước ra thị trường toàn
+            <p>Được thành lập vào tháng 10 năm 2020 như một bước đi chiến lược của Tập đoàn để bước ra thị trường toàn
               cầu, chúng tôi tự hào là công ty hàng đầu tại Việt Nam trong việc cung cấp nhiều Giải pháp & Dịch vụ CNTT
               toàn diện, từ các dịch vụ Truyền thống đến Chuyển đổi Kỹ thuật số, cũng như Tư vấn cho các tổ chức trên
               toàn thế giớ</p>
@@ -129,7 +129,7 @@
     <div class="col-sm-2" data-aos="fade-up">
       <div class=" card">
         <div class="card-body">
-          <p style="color: #00AEEF;font-size: 72px;font-weight: 500;line-height: 70px;" class="text-center">1,500+
+          <p style="color: #00AEEF;font-size: 72px;font-weight: 500;line-height: 70px;" class="text-center">900+
           </p>
           <div class="text-center">
             <p>Chuyên gia</p>
@@ -163,9 +163,7 @@
             </div>
             <h4><a href="#">Startup</a></h4>
             <p class="text-justify">Trong một thị trường thay đổi nhanh chóng, nhu cầu phát triển phần mềm được phân
-              phối
-              nhanh là nhu cầu
-              thiết yếu hàng đầu của các công ty khởi nghiệp. Hiểu rằng chúng tôi cung cấp các dịch vụ giúp những người
+              phối nhanh là nhu cầu thiết yếu hàng đầu của các công ty khởi nghiệp. Hiểu rằng chúng tôi cung cấp các dịch vụ giúp những người
               sáng lập xác định các đặc điểm chính, lập kế hoạch phát triển sản phẩm và chuẩn bị cho dự án trong thời
               gian trung bình ngắn nhất. Cho dù bạn mới bắt đầu hay đang muốn mở rộng, chúng tôi luôn sẵn sàng trợ giúp
               bạn mọi bước.</p>
@@ -205,7 +203,7 @@
             <p class="text-justify">Để phát triển trong bất kỳ bối cảnh ngành công nghiệp nào, các doanh nghiệp cần liên
               tục tăng năng suất
               và cải thiện chất lượng. Trong thời đại công nghệ 4.0, trí tuệ và sáng kiến đồng nghĩa với cơ hội doanh
-              thu, tối ưu hóa các kênh và lợi nhuận cao hơn, CMC SQT2 tự hào là đơn vị đồng hành của nhiều doanh
+              thu, tối ưu hóa các kênh và lợi nhuận cao hơn, DHCompany tự hào là đơn vị đồng hành của nhiều doanh
               nghiệp lớn để giúp họ giành lấy lợi thế trước các đối thủ cạnh tranh</p>
           </div>
         </div>
@@ -219,8 +217,7 @@
       <div class="section-title" data-oas="fade-up">
         <h2>Đối tác</h2>
         <p>Danh sách đối tác ngày càng dài thêm là minh chứng cho mối quan hệ hợp tác hiệu quả giữa DHCompany cùng các
-          đối tác tại Việt Nam và nhiều quốc gia trên thế giới. CMC SQT2 tự hào được kể tên các thương hiệu nổi tiếng mà SQT2
-          GLOBAL đã và đang hợp tác.</p>
+          đối tác tại Việt Nam và nhiều quốc gia trên thế giới. DHCompany tự hào được kể tên các thương hiệu nổi tiếng mà DHCompany đã và đang hợp tác.</p>
       </div>
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-aos="fade-up">
         <div class="carousel-inner">
@@ -262,72 +259,6 @@
 
     </div>
   </section><!-- End Our Team Section -->
-
-  <!-- ======= Our Clients Section ======= -->
-  <!-- <section id="clients" class="clients">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-title">
-        <h2>Đối tác</h2>
-        <p>Danh sách đối tác ngày càng dài thêm là minh chứng cho mối quan hệ hợp tác hiệu quả giữa DHCompany cùng các
-          đối tác tại Việt Nam và nhiều quốc gia trên thế giới. CMC SQT2 tự hào được kể tên các thương hiệu nổi tiếng mà SQT2
-          GLOBAL đã và đang hợp tác.</p>
-      </div>
-
-      <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/cj.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/facebook.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/google.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/hsbc.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/marter_card.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/netease.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/vtv.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/waltdisney.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
 
 </main><!-- End #main -->
 
