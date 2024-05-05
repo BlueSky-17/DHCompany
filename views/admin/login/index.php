@@ -14,9 +14,9 @@
 	<!-- Theme style-->
 	<link rel="stylesheet" href="public/dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition login-page">
-	<div class="login-box">
-		<div class="login-logo"><a href="/index2.html"><b>Company</b>Manager</a></div>
+<body class="hold-transition login-page" style="background-color: #46aee1;">
+	<div class="login-box" style="background-color: #cfe2f3; box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);">
+		<div class="login-logo"><a href="/index2.html"><b><span style="color: #007bff;">DHCompany</span> Login</b></a></div>
 		<!-- /.login-logo-->
 		<div class="card">
 			<div class="card-body login-card-body">
@@ -32,13 +32,13 @@
 					<div class="input-group mb-3">
 						<input class="form-control" type="text" placeholder="Tài khoản" name="username">
 						<div class="input-group-append">
-							<div class="input-group-text"><span class="fas fa-envelope"></span></div>
+							<div class="input-group-text"><span class="fas fa-user"></span></div>
 						</div>
 					</div>
 					<div class="input-group mb-3">
 						<input class="form-control" type="password" placeholder="Mật khẩu" name="password">
 						<div class="input-group-append">
-							<div class="input-group-text"><span class="fas fa-lock"></span></div>
+							<div class="input-group-text"><span class="fas fa-user-lock"></span></div>
 						</div>
 					</div>
 					<div class="row">
