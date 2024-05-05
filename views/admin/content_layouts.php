@@ -29,14 +29,14 @@
     <!-- Main Sidebar Container-->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Sidebar-->
-      <div class="sidebar">
+      <div class="sidebar p-0">
       <!-- Brand Logo-->
-      <a class="brand-link" href="index.php">
+      <a class="brand-link px-2" href="index.php">
         <img class="brand-image img-circle elevation-3" src="public\uploads\DHCompany_Icon.png" alt="DHCompany Icon">
         <span class="brand-text font-weight-light">DHCompany</span>
       </a>
         <!-- Sidebar Menu-->
-        <nav class="mt-2">
+        <nav class="mt-2 px-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!--Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
             <li class="nav-item">

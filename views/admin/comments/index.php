@@ -41,7 +41,7 @@ require_once('views/admin/content_layouts.php'); ?>
                         <!-- /.card-header-->
                         <div class="card-body">
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm mới</button>
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm bình luận</button>
                         </div>	
                         <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModal" aria-hidden="true">
                             <div class="modal-dialog" role="document">
@@ -78,14 +78,14 @@ require_once('views/admin/content_layouts.php'); ?>
                                     <div class="col-12">
                                         <table id="giaotrinhofkh" class="table table-bordered table-striped" style="margin-top:6px;">
                                             <thead>
-                                                <tr class="text-center">
-                                                    <th style="width: 220px;">STT</th>
-                                                    <th style="width: 220px;">Mã bài viết</th>
+                                                <tr class="text-center table-info">
+                                                    <th style="width: 70px;">STT</th>
+                                                    <th style="width: 100px;">Mã bài viết</th>
                                                     <th style="width: 220px;">Ngày</th>
                                                     <th style="width: 130px;">Tiếp cận</th>
                                                     <th style="width: 260px;">Nội dung</th>
                                                     <th style="width: 230px;">Người dùng bình luận</th>
-                                                    <th style="width: 100px;">Thao tác</th>
+                                                    <th style="width: 150px;">Thao tác</th>
                                                 </tr>
                                             </thead>
                                             <tbody> 

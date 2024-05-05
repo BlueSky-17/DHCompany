@@ -39,7 +39,9 @@ require_once('views/admin/content_layouts.php'); ?>
                     <div class="card">
                         <!-- /.card-header-->
                         <div class="card-body">
-                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm sản phẩm</button>
+                        <div class="d-flex justify-content-end mb-2">
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm sản phẩm</button>
+						</div>	
                         <div class="modal fade" id="addUserModal"  aria-labelledby="addUserModal" aria-hidden="true">
                             <div class="modal-dialog modal-xl">
                                 <div class="modal-content">
@@ -64,8 +66,8 @@ require_once('views/admin/content_layouts.php'); ?>
                         </div>
                             <div class="row"></div>
                                 <table id="TAB-product" class="table table-bordered table-striped"> 
-                                    <thead style="background-color:#FFE4E1;">
-                                        <tr  class="text-center">
+                                    <thead>
+                                        <tr  class="text-center table-info">
                                             <th scope="col">STT</th>
                                             <th scope="col">Sản phẩm</th>
                                             <th scope="col">Mô tả</th>

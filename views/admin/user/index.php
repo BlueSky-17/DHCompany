@@ -42,7 +42,9 @@ require_once('views/admin/content_layouts.php'); ?>
 					<div class="card">
 						<div class="card-body">
 							<!-- Button trigger modal-->
-							<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm khách hàng</button>
+							<div class="d-flex justify-content-end mb-2">
+								<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm khách hàng</button>
+							</div>
 							<!-- Modal-->
 							<div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModal" aria-hidden="true">
 								<div class="modal-dialog" role="document">
@@ -121,8 +123,8 @@ require_once('views/admin/content_layouts.php'); ?>
 							</div>
 
 							<table class="table table-bordered table-striped" id="tab-user">
-								<thead style="background-color:#FFE4E1">
-									<tr class="text-center">
+								<thead>
+									<tr class="text-center table-info">
 										<th>STT</th>
 										<th>Họ và tên lót</th>
 										<th>Tên</th>
