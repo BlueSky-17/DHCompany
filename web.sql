@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2022 at 05:37 PM
--- Server version: 10.4.25-MariaDB
--- PHP Version: 8.1.10
+-- Generation Time: May 05, 2024 at 07:14 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,16 +32,14 @@ CREATE TABLE `admin` (
   `password` varchar(255) DEFAULT NULL,
   `createAt` datetime DEFAULT NULL,
   `updateAt` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `admin`
 --
 
 INSERT INTO `admin` (`username`, `password`, `createAt`, `updateAt`) VALUES
-('admin', '1234', NULL, NULL),
-('quan', '$2y$10$C3n/TP8t8jSTdvAtHPS04eAfK9m1lB6sSquvLyZ2I4CP8ujX87m1.', '2022-12-06 13:47:21', '2022-12-06 13:47:21'),
-('username', '', NULL, NULL);
+('admin', '$2y$10$EScz1sAqHnH5nXDozkzmIODdyIknUocrdqxhlZQ6wUWhrgETe8kZG', '2024-05-05 12:12:38', '2024-05-05 12:12:38');
 
 -- --------------------------------------------------------
 
@@ -57,7 +55,7 @@ CREATE TABLE `comment` (
   `news_id` int(11) DEFAULT NULL,
   `user_id` varchar(255) DEFAULT NULL,
   `parent` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `comment`
@@ -80,7 +78,7 @@ CREATE TABLE `company` (
   `address` varchar(1000) DEFAULT NULL,
   `createAt` datetime DEFAULT NULL,
   `updateAt` datetime DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `company`
@@ -103,7 +101,7 @@ CREATE TABLE `news` (
   `description` varchar(1000) DEFAULT NULL,
   `content` varchar(10000) DEFAULT NULL,
   `title` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `news`
@@ -126,7 +124,7 @@ CREATE TABLE `product` (
   `description` varchar(1000) DEFAULT NULL,
   `content` varchar(10000) DEFAULT NULL,
   `img` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `product`
@@ -154,7 +152,7 @@ CREATE TABLE `user` (
   `createAt` datetime DEFAULT NULL,
   `updateAt` datetime DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `user`
