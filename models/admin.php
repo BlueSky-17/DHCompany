@@ -35,12 +35,6 @@ class Admin
         $db = DB::getInstance();
         $req = $db->query("SELECT * FROM admin WHERE username = '$username'");
 
-        // echo "<p> {$req->fetch_assoc()['password']} </p>";
-        // $res = @password_verify($password, $req->fetch_assoc()['password']);
-
-        // echo "<p>{$res}</p>";
-        // echo "<p> {@password_verify($password, $req->fetch_assoc()['password'])} </p>"
-
         if (@password_verify($password, $req->fetch_assoc()['password']))
             return true;
         else

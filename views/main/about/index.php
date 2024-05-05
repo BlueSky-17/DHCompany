@@ -25,8 +25,8 @@
         </div>
         <div class="col-lg-5 pt-4 pt-lg-0" data-aos="fade-left">
           <p>
-            CMC SQT2 đã hợp tác lâu dài và hợp tác với các khách hàng nổi tiếng thông qua Việt Nam và nước ngoài. Dưới
-            đây là những lý do tại sao hơn 150 khách hàng trên toàn thế giới đã chọn CMC SQT2 làm đối tác đáng tin cậy
+            DHCompany đã hợp tác lâu dài và hợp tác với các khách hàng nổi tiếng thông qua Việt Nam và nước ngoài. Dưới
+            đây là những lý do tại sao hơn 150 khách hàng trên toàn thế giới đã chọn DHCompany làm đối tác đáng tin cậy
             của họ
           </p>
           <ul>
@@ -118,25 +118,7 @@
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up">
             <div class="member-img">
-              <img src="public/assets/img/team/Son.png" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>ÔNG CÙ THANH SƠN</h4>
-              <span>Chủ tịch kiêm Tổng Giám đốc</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="member-img">
-              <img src="public/assets/img/team/Quan.png" class="img-fluid" alt="">
+              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -146,33 +128,15 @@
             </div>
             <div class="member-info">
               <h4>ÔNG THI KHẮC QUÂN</h4>
-              <span>Phó Tổng Giám đốc điều hành DHCompany</span>
+              <span>Chủ tịch kiêm Tổng Giám đốc</span>
             </div>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="200">
+          <div class="member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="public/assets/img/team/Thanh.png" class="img-fluid" alt="">
-              <div class="social">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-            <div class="member-info">
-              <h4>ÔNG ĐẶNG QUANG THÀNH</h4>
-              <span>Phó Tổng Giám đốc điều hành DHCompany, lãnh đạo dịch vụ đám mây</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up" data-aos-delay="300">
-            <div class="member-img">
-              <img src="public/assets/img/team/Tus.png" class="img-fluid" alt="">
+              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -182,6 +146,42 @@
             </div>
             <div class="member-info">
               <h4>ÔNG PHƯƠNG CHUNG TÚ</h4>
+              <span>Phó Tổng Giám đốc điều hành DHCompany</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
+            <div class="member-img">
+              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>ÔNG LÊ TRÍ NGUYÊN</h4>
+              <span>Phó Tổng Giám đốc điều hành DHCompany, lãnh đạo dịch vụ đám mây</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
+            <div class="member-img">
+              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>ÔNG HỒ CHÍ ANH KHÔI</h4>
               <span>Lãnh đạo các cổng thanh toán dịch vụ</span>
             </div>
           </div>
@@ -199,9 +199,9 @@
           <div class="timeline" data-aos="fade-up">
             <div class="timeline-icon"><span class="year">2016</span></div>
             <div class="timeline-content">
-              <h3 class="title">CMC SQT2</h3>
+              <h3 class="title">DHCompany</h3>
               <p class="description">
-                CMC SQT2 tiền thân là một bộ phận của CMC Corp chuyên cung cấp dịch vụ gia công phần mềm CNTT với chỉ
+                DHCompany tiền thân là một bộ phận của DHCompany Corp chuyên cung cấp dịch vụ gia công phần mềm CNTT với chỉ
                 50 nhân viên
               </p>
             </div>
@@ -211,9 +211,9 @@
             <div class="timeline-content">
               <h3 class="title">Web Developer</h3>
               <p class="description">
-                Công ty TNHH CMC SQT2 được thành lập như mảng kinh doanh chủ lực của Tập đoàn nhằm đưa các sản phẩm
-                công nghệ cao và dịch vụ CNTT ra thị trường toàn cầu. CMC SQT2 mở chi nhánh đầu tiên tại Yokohama,
-                Nhật bản CMC Japan
+                Công ty TNHH DHCompany được thành lập như mảng kinh doanh chủ lực của Tập đoàn nhằm đưa các sản phẩm
+                công nghệ cao và dịch vụ CNTT ra thị trường toàn cầu. DHCompany mở chi nhánh đầu tiên tại Yokohama,
+                Nhật bản DHCompany Japan
               </p>
             </div>
           </div>
@@ -222,7 +222,7 @@
             <div class="timeline-content">
               <h3 class="title">Web Desginer</h3>
               <p class="description">
-                CMC SQT2 nhận giải thưởng Sao Khuê đầu tiên cho hạng mục “Dịch vụ xuất khẩu phần mềm”. CMC SQT2 mở
+                DHCompany nhận giải thưởng Sao Khuê đầu tiên cho hạng mục “Dịch vụ xuất khẩu phần mềm”. DHCompany mở
                 chi nhánh tại Hồ Chí Minh, mở rộng ra thị trường phía Nam Việt Nam.
               </p>
             </div>
@@ -232,7 +232,7 @@
             <div class="timeline-content">
               <h3 class="title">Web Developer</h3>
               <p class="description">
-                CMC SQT2 nhận giải thưởng Sao Khuê lần thứ 2 cho hạng mục “Dịch vụ xuất khẩu phần mềm
+                DHCompany nhận giải thưởng Sao Khuê lần thứ 2 cho hạng mục “Dịch vụ xuất khẩu phần mềm
               </p>
             </div>
           </div>
@@ -242,71 +242,6 @@
   </div>
 
 
-  <!-- ======= Our Clients Section ======= -->
-  <!-- <section id="clients" class="clients">
-    <div class="container" data-aos="fade-up">
-
-      <div class="section-title">
-        <h2>Đối tác</h2>
-        <p>Danh sách đối tác ngày càng dài thêm là minh chứng cho mối quan hệ hợp tác hiệu quả giữa DHCompany cùng các
-          đối tác tại Việt Nam và nhiều quốc gia trên thế giới. CMC SQT2 tự hào được kể tên các thương hiệu nổi tiếng mà SQT2
-          GLOBAL đã và đang hợp tác.</p>
-      </div>
-
-      <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/cj.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/facebook.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/google.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/hsbc.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/marter_card.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/netease.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/vtv.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-4 col-6">
-          <div class="client-logo">
-            <img src="public/assets/img/clients/waltdisney.png" class="img-fluid" alt="">
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section> -->
 
 </main><!-- End #main -->
 <?php
