@@ -41,13 +41,8 @@
 							<div class="input-group-text"><span class="fas fa-user-lock"></span></div>
 						</div>
 					</div>
-					<div class="row">
-						<div class="col-7"></div>
-						<!-- /.col-->
-						<div class="col-5">
-							<button class="btn btn-primary btn-block" type="submit">Đăng nhập</button>
-						</div>
-						<!-- /.col-->
+					<div>
+						<button class="btn btn-primary btn-block" type="submit">Đăng nhập</button>
 					</div>
 				</form>
 			</div>
