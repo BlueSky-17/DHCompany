@@ -16,7 +16,23 @@ require_once('views/admin/content_layouts.php'); ?>
 <!-- Code -->
 <div class="content-wrapper">
 	<!-- Add Content -->
-	<h1 style="margin-left: 10px">Bình luận đánh giá</h1> 
+	<!-- Content Header (Page header)-->
+	<section class="content-header">
+		<div class="container-fluid">
+			<div class="row mb-2">
+				<div class="col-sm-6">
+					<h1>Quản lý bình luận</h1>
+				</div>
+				<div class="col-sm-6">
+					<ol class="breadcrumb float-sm-right">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item active">Quản lý bình luận</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<!-- /.container-fluid-->
+	</section>
     <section class="content">
         <div class="container-fluid"> 
             <div class="row">
@@ -24,7 +40,9 @@ require_once('views/admin/content_layouts.php'); ?>
                     <div class="card">
                         <!-- /.card-header-->
                         <div class="card-body">
-                        <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm mới</button>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm mới</button>
+                        </div>	
                         <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModal" aria-hidden="true">
                             <div class="modal-dialog" role="document">
                                 <div class="modal-content">

@@ -20,12 +20,12 @@ require_once('views/admin/content_layouts.php'); ?>
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-8">
-					<h1>Bạn đã đăng nhập vào khu vực Quản trị của SQT2 GLOBAL!</h1>
+					<h1>Chào mừng đến với khu vực Quản trị của DHCompany!</h1>
 				</div>
 				<div class="col-sm-4">
 					<ol class="breadcrumb float-sm-right">
 						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active">Widgets</li>
+						<li class="breadcrumb-item active">Dashboard</li>
 					</ol>
 				</div>
 			</div>
@@ -36,60 +36,112 @@ require_once('views/admin/content_layouts.php'); ?>
 	<section class="content">
 		<div class="container-fluid">
 			<div class="invoice p-3 mb-3">
-				<div class="row invoice-info">
-					<div class="col-sm-6 invoice-col">
-						<ul style="list-style: none;">
-							<li><a href="index.php?page=admin&controller=admin&action=index" class="fas fa-user-graduate"> Quản lý Thành viên</a></li>
-							<li><a href="index.php?page=admin&controller=comments&action=index" class="fas fa-comments"> Bình luận đánh giá</a></li>
-							<li><a href="index.php?page=admin&controller=user&action=index" class="fas fa-users-cog"> Liên hệ khách hàng</a>
-						</ul>
-					</div>
-					<!-- /.col -->
-					<div class="col-sm-6 invoice-col">
-						<ul style="list-style: none;">
-							<li><a href="index.php?page=admin&controller=products&action=index" class="fas fa-cube"> Quản lý sản phẩm</a></li>
-							<li><a href="index.php?page=admin&controller=news&action=index" class="fas fa-file"> Quản lý bài viết</a></li>
-							<li><a href="index.php?page=admin&controller=company&action=index" class="fas fa-newspaper"> Quản lý thông tin public</a>
-						</ul>
-					</div>
-					<!-- /.col -->
-				</div>
+				<p>Chào mừng đến với DHCompany</p>
+				<p>DHCompany chính là con người và văn hóa doanh nghiệp. Với kim chỉ nam là 3 giá trị cốt lõi, các thành viên ở DHCompany luôn có tinh thần cống hiến vì sự phát triển chung của DHCompany và cộng đồng. </p>
 				<!-- /.row -->
 			</div>
-			<div class="card card-success">
-				<div class="card-body">
-					<div class="row">
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="card mb-2 bg-gradient-dark">
-								<img class="card-img-top" src="public/img/layouts/Homepage_1.jpg" alt="Dist Photo 1">
-								<div class="card-img-overlay d-flex flex-column justify-content-end">
-									<h5 class="card-title text-primary text-white">Chào mừng đến với SQT2 GLOBAL</h5>
-									<p class="card-text text-white pb-2 pt-1">Thành lập ngày 9/9/2004, SQT2 GLOBAL hiện là công ty Internet và công nghệ hàng đầu, kỳ lân công nghệ 1 tỷ USD + duy nhất của Việt Nam.</p>
+			<div class="row">
+				<!-- Earnings (Monthly) Card Example -->
+				<a href="index.php?page=admin&controller=admin&action=index" class="col-xl-4 col-md-6 mb-4">
+					<div class="card border-left-primary shadow h-100 py-2">
+						<div class="row card-body justify-content-center">
+							<div class="row no-gutters align-items-center">
+								<div class="col mr-2">
+									<div class="h5 font-weight-bold text-primary mb-1">
+									Quản lý Thành viên</div>
 								</div>
-							</div>
-						</div>
-
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="card mb-2 bg-gradient-dark">
-								<img class="card-img-top" src="public/img/layouts/Homepage_2.jpg" alt="Dist Photo 1">
-								<div class="card-img-overlay d-flex flex-column justify-content-end">
-									<h5 class="card-title text-primary text-white">Thành công với SQT2 GLOBAL</h5>
-									<p class="card-text text-white pb-2 pt-1">Có hơn 80 triệu người dùng tại 193 quốc gia với 15 ngôn ngữ.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-12 col-lg-6 col-xl-4">
-							<div class="card mb-2 bg-gradient-dark">
-								<img class="card-img-top" src="public/img/layouts/Homepage_3.jpg" alt="Dist Photo 1">
-								<div class="card-img-overlay d-flex flex-column justify-content-end">
-									<h5 class="card-title text-primary text-white">Đồng hành cùng SQT2 GLOBAL</h5>
-									<p class="card-text text-white pb-2 pt-1">Chúng tôi luôn chào đón các ứng viên hoài bão, mong muốn dấn thân vào lĩnh vực Internet, yêu thích làm việc trong một môi trường năng động, trẻ trung và đầy thử thách.</p>
+								<div class="col-auto">
+									<i class="fas fa-user-graduate fa-2x text-primary"></i>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				</a>
+
+				<!-- Earnings (Monthly) Card Example -->
+				<a href="index.php?page=admin&controller=comments&action=index" class="col-xl-4 col-md-6 mb-4">
+					<div class="card border-left-primary shadow h-100 py-2">
+						<div class="row card-body justify-content-center">
+							<div class="row no-gutters align-items-center">
+								<div class="col mr-2">
+									<div class="h5 font-weight-bold text-success mb-1">
+									Quản lý bình luận</div>
+								</div>
+								<div class="col-auto">
+									<i class="fas fa-comments fa-2x text-success"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Earnings (Monthly) Card Example -->
+				<a href="index.php?page=admin&controller=products&action=index" class="col-xl-4 col-md-6 mb-4">
+					<div class="card border-left-primary shadow h-100 py-2">
+						<div class="row card-body justify-content-center">
+							<div class="row no-gutters align-items-center">
+								<div class="col mr-2">
+									<div class="h5 font-weight-bold text-info mb-1">
+									Quản lý sản phẩm</div>
+								</div>
+								<div class="col-auto">
+									<i class="fas fa-cube fa-2x text-info"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Earnings (Monthly) Card Example -->
+				<a href="index.php?page=admin&controller=news&action=index" class="col-xl-4 col-md-6 mb-4">
+					<div class="card border-left-primary shadow h-100 py-2">
+						<div class="row card-body justify-content-center">
+							<div class="row no-gutters align-items-center">
+								<div class="col mr-2">
+									<div class="h5 font-weight-bold text-danger mb-1">
+									Quản lý bài viết</div>
+								</div>
+								<div class="col-auto">
+									<i class="fas fa-file fa-2x text-danger"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Earnings (Monthly) Card Example -->
+				<a href="index.php?page=admin&controller=company&action=index" class="col-xl-4 col-md-6 mb-4">
+					<div class="card border-left-primary shadow h-100 py-2">
+						<div class="row card-body justify-content-center">
+							<div class="row no-gutters align-items-center">
+								<div class="col mr-2">
+									<div class="h5 font-weight-bold text-secondary mb-1">
+									Quản lý chi nhánh</div>
+								</div>
+								<div class="col-auto">
+									<i class="fas fa-newspaper fa-2x text-secondary"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<!-- Earnings (Monthly) Card Example -->
+				<a href="index.php?page=admin&controller=user&action=index" class="col-xl-4 col-md-6 mb-4">
+					<div class="card border-left-primary shadow h-100 py-2">
+						<div class="row card-body justify-content-center">
+							<div class="row no-gutters align-items-center">
+								<div class="col mr-2">
+									<div class="h5 font-weight-bold text-warning mb-1">
+									Quản lý thông tin khách hàng</div>
+								</div>
+								<div class="col-auto">
+									<i class="fas fa-users-cog fa-2x text-warning"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
 			</div>
 		</div><!-- /.container-fluid -->
 	</section>
