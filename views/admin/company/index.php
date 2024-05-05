@@ -22,12 +22,12 @@ require_once('views/admin/content_layouts.php'); ?>
 		<div class="container-fluid">
 			<div class="row mb-2">
 				<div class="col-sm-6">
-					<h1>Quản lý Thông tin trang public</h1>
+					<h1>Quản lý thông tin chi nhánh</h1>
 				</div>
 				<div class="col-sm-6">
 					<ol class="breadcrumb float-sm-right">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item active">Thông tin trang public</li>
+						<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+						<li class="breadcrumb-item active">Thông tin chi nhánh</li>
 					</ol>
 				</div>
 			</div>
@@ -71,9 +71,9 @@ require_once('views/admin/content_layouts.php'); ?>
 								</div>
 							</div>
 
-							<table class="table table-bordered table-striped" id="tab-company">
+							<table class="table table-bordered table-striped table-hover" id="tab-company">
 								<thead>
-									<tr class="text-center">
+									<tr class="text-center table-info">
 										<th>STT</th>
 										<th>Tên chi nhánh</th>
 										<th>Địa chỉ chi nhánh</th>
@@ -140,7 +140,7 @@ require_once('views/admin/content_layouts.php'); ?>
 										<form action="index.php?page=admin&controller=company&action=delete" method="post">
 											<div class="modal-body">
 												<input type="hidden" name="id" />
-												<p>Bạn chắc chưa ?</p>
+												<p>Xác nhận xóa?</p>
 											</div>
 											<div class="modal-footer">
 												<button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng lại</button>

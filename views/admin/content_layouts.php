@@ -50,23 +50,16 @@
         <!-- Sidebar Menu-->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!--Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?page=admin&controller=company&action=index">
+                <i class="nav-icon fa fa-newspaper" aria-hidden="true"></i>
+                <p>Quản lý chi nhánh</p>
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="index.php?page=admin&controller=admin&action=index">
                 <i class="nav-icon fas fa-user-graduate"> </i>
                 <p>Quản lý Thành viên</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=comments&action=index">
-                <i class="nav-icon fas fa-comments"></i>
-                <p>Bình luận đánh giá</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=user&action=index">
-                <i class="nav-icon fas fa-users-cog"></i>
-                <p>Liên hệ khách hàng</p>
               </a>
             </li>
             <li class="nav-item">
@@ -82,9 +75,15 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=company&action=index">
-                <i class="nav-icon fa fa-newspaper" aria-hidden="true"></i>
-                <p>Quản lý thông tin public</p>
+              <a class="nav-link" href="index.php?page=admin&controller=comments&action=index">
+                <i class="nav-icon fas fa-comments"></i>
+                <p>Quản lý bình luận</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?page=admin&controller=user&action=index">
+                <i class="nav-icon fas fa-users-cog"></i>
+                <p>Liên hệ khách hàng</p>
               </a>
             </li>
           </ul>
