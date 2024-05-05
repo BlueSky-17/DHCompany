@@ -72,7 +72,7 @@ require_once('views/admin/content_layouts.php'); ?>
                                             <th scope="col">Nội dung</th>
                                             <th scope="col">Giá</th>
                                             <th scope="col">Hình ảnh</th>
-                                            <th scope="col"> </th>
+                                            <th scope="col">Thao tác</th>
                                         </tr>
                                     </thead>
                                    
