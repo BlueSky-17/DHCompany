@@ -43,7 +43,7 @@ require_once('views/admin/content_layouts.php'); ?>
 						<div class="card-body">
 							<!-- Button trigger modal-->
 							<div class="d-flex justify-content-end mb-2">
-								<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addAdminModal">Thêm mới</button>
+								<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addAdminModal">Thêm thành viên</button>
 							</div>							
 							<!-- Modal-->
 							<div class="modal fade" id="addAdminModal" tabindex="-1" role="dialog" aria-labelledby="addAdminModal" aria-hidden="true">
@@ -73,9 +73,9 @@ require_once('views/admin/content_layouts.php'); ?>
 								</div>
 							</div>
 
-							<table class="table table-bordered table-striped" id="giaotrinhofkh">
+							<table class="table table-bordered table-striped" id="tab-admin">
 								<thead>
-									<tr class="text-center">
+									<tr class="text-center table-info">
 										<th>STT</th>
 										<th>Tên đăng nhập</th>
 										<th>Cập nhật lần cuối</th>

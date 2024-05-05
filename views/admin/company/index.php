@@ -42,7 +42,9 @@ require_once('views/admin/content_layouts.php'); ?>
 					<div class="card">
 						<div class="card-body">
 							<!-- Button trigger modal-->
-							<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addCompanyModal">Thêm chi nhánh</button>
+							<div class="d-flex justify-content-end mb-2">
+								<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addCompanyModal">Thêm chi nhánh</button>
+							</div>	
 							<!-- Modal-->
 							<div class="modal fade" id="addCompanyModal" tabindex="-1" role="dialog" aria-labelledby="addCompanyModal" aria-hidden="true">
 								<div class="modal-dialog" role="document">
