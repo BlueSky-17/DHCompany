@@ -11,9 +11,6 @@
             <i class="fas fa-bars"></i>
           </a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-          <a class="nav-link" href="index.php">Home</a>
-        </li>
       </ul>
       <!-- Right navbar links-->
       <ul class="navbar-nav ml-auto">
@@ -31,42 +28,33 @@
     <!-- /.navbar-->
     <!-- Main Sidebar Container-->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
-      <!-- Brand Logo-->
-      <a class="brand-link" href="index.php">
-        <img class="brand-image img-circle elevation-3" src="public/dist/img/logo-BK.png" alt="CSE Logo">
-        <span class="brand-text font-weight-light">HCMUT CSE</span>
-      </a>
       <!-- Sidebar-->
       <div class="sidebar">
-        <!-- Sidebar user (optional)-->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img class="img-circle elevation-2" src="public/dist/img/logo-library.png" alt="Library logo">
-          </div>
-          <div class="info">
-            <a class="d-block" href="index.php">Web Company</a>
-          </div>
-        </div>
+      <!-- Brand Logo-->
+      <a class="brand-link" href="index.php">
+        <img class="brand-image img-circle elevation-3" src="public\uploads\DHCompany_Icon.png" alt="DHCompany Icon">
+        <span class="brand-text font-weight-light">DHCompany</span>
+      </a>
         <!-- Sidebar Menu-->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!--Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
             <li class="nav-item">
+              <a class="nav-link" href="index.php?page=admin&controller=layouts&action=index">
+                <i class="nav-icon fas fa-fw fa-tachometer-alt"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="index.php?page=admin&controller=admin&action=index">
                 <i class="nav-icon fas fa-user-graduate"> </i>
-                <p>Quản lý Thành viên</p>
+                <p>Quản lý thành viên</p>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.php?page=admin&controller=comments&action=index">
                 <i class="nav-icon fas fa-comments"></i>
-                <p>Bình luận đánh giá</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.php?page=admin&controller=user&action=index">
-                <i class="nav-icon fas fa-users-cog"></i>
-                <p>Liên hệ khách hàng</p>
+                <p>Quản lý bình luận</p>
               </a>
             </li>
             <li class="nav-item">
@@ -84,7 +72,13 @@
             <li class="nav-item">
               <a class="nav-link" href="index.php?page=admin&controller=company&action=index">
                 <i class="nav-icon fa fa-newspaper" aria-hidden="true"></i>
-                <p>Quản lý thông tin public</p>
+                <p>Quản lý chi nhánh</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.php?page=admin&controller=user&action=index">
+                <i class="nav-icon fas fa-users-cog"></i>
+                <p>Quản lý thông tin khách hàng</p>
               </a>
             </li>
           </ul>
@@ -92,3 +86,5 @@
         </nav>
       </div>
     </aside>
+  </div>
+</body>
