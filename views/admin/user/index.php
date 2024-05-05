@@ -42,34 +42,27 @@ require_once('views/admin/content_layouts.php'); ?>
 					<div class="card">
 						<div class="card-body">
 							<!-- Button trigger modal-->
-							<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm mới</button>
+							<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#addUserModal">Thêm khách hàng</button>
 							<!-- Modal-->
 							<div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="addUserModal" aria-hidden="true">
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title">Thêm mới</h5>
+											<h5 class="modal-title">Thêm khách hàng</h5>
 											<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 										</div>
 										<form action="index.php?page=admin&controller=user&action=add" enctype="multipart/form-data" method="post">
 											<div class="modal-body">
-												<div class="row">
-													<div class="col-md-6">
-														<div class="form-group">
-															<div class="row"> </div>
-															<label>Họ và tên lót</label>
-															<input class="form-control" type="text" placeholder="Họ và tên lót" name="fname" />
-														</div>
-													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<div class="row"> </div>
-															<label>Tên</label>
-															<input class="form-control" type="text" placeholder="Tên" name="lname" />
-														</div>
-													</div>
+												<div class="form-group">
+													<div class="row"> </div>
+													<label>Tên</label>
+													<input class="form-control" type="text" placeholder="Tên" name="lname" />
 												</div>
-
+												<div class="form-group">
+													<div class="row"> </div>
+													<label>Họ và tên lót</label>
+													<input class="form-control" type="text" placeholder="Họ và tên lót" name="fname" />
+												</div>
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
@@ -79,7 +72,7 @@ require_once('views/admin/content_layouts.php'); ?>
 													</div>
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Giới tính:</label>
+															<label>Giới tính</label>
 															<div class="row">
 																<div class="col-md-4">
 																	<div class="form-check">
@@ -119,8 +112,8 @@ require_once('views/admin/content_layouts.php'); ?>
 
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-												<button class="btn btn-primary" type="submit">Thêm mới</button>
+												<button class="btn btn-danger" type="button" data-dismiss="modal">Đóng</button>
+												<button class="btn btn-success" type="submit">Thêm mới</button>
 											</div>
 										</form>
 									</div>
@@ -128,16 +121,16 @@ require_once('views/admin/content_layouts.php'); ?>
 							</div>
 
 							<table class="table table-bordered table-striped" id="tab-user">
-								<thead>
+								<thead style="background-color:#FFE4E1">
 									<tr class="text-center">
 										<th>STT</th>
-										<th>Hình ảnh</th>
 										<th>Họ và tên lót</th>
 										<th>Tên</th>
-										<th>Giới tính</th>
 										<th>Tuổi</th>
+										<th>Giới tính</th>
 										<th>Số điện thoại</th>
 										<th>Email</th>
+										<th>Hình ảnh</th>
 										<th>Thao tác</th>
 									</tr>
 								</thead>
@@ -147,13 +140,13 @@ require_once('views/admin/content_layouts.php'); ?>
 									foreach ($user as $user) {
 										echo "<tr class='text-center' style='height:300px; line-height:300px; white-space: nowrap;'>";
 										echo "<td>" . $index++ . "</td>";
-										echo "<td><img style=\"width: 200px; height:300px;\" src='$user->profile_photo'></td>";
 										echo "<td>" . $user->fname . "</td>";
 										echo "<td>" . $user->lname . "</td>";
-										echo "<td>" . (($user->gender == 1) ? "Nam" : "Nữ") . "</td>";
 										echo "<td>" . $user->age . "</td>";
+										echo "<td>" . (($user->gender == 1) ? "Nam" : "Nữ") . "</td>";
 										echo "<td>" . $user->phone . "</td>";
 										echo "<td>" . $user->email . "</td>";
+										echo "<td><img style=\"width: 200px; height:300px;\" src='$user->profile_photo'></td>";
 										echo "<td>
 											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-email='$user->email' data-fname='$user->fname' data-lname='$user->lname' data-gender='$user->gender' data-age='$user->age' data-phone='$user->phone' data-img='$user->profile_photo'> <i class='fas fa-edit'></i></btn>
 											<btn class='btn-changepass btn btn-warning btn-xs' style='margin-right: 5px' data-email='$user->email'> <i class='fas fa-lock'></i></btn>
@@ -201,7 +194,7 @@ require_once('views/admin/content_layouts.php'); ?>
 													</div>
 													<div class="col-md-6">
 														<div class="form-group">
-															<label>Giới tính:</label>
+															<label>Giới tính</label>
 															<div class="row">
 																<div class="col-md-4">
 																	<div class="form-check">
@@ -234,8 +227,8 @@ require_once('views/admin/content_layouts.php'); ?>
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-												<button class="btn btn-primary" type="submit">Cập nhật</button>
+												<button class="btn btn-danger" type="button" data-dismiss="modal">Đóng</button>
+												<button class="btn btn-success" type="submit">Cập nhật</button>
 											</div>
 										</form>
 									</div>
@@ -262,8 +255,8 @@ require_once('views/admin/content_layouts.php'); ?>
 												</div>
 											</div>
 											<div class="modal-footer">
-												<button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-												<button class="btn btn-primary" type="submit">Cập nhật</button>
+												<button class="btn btn-danger" type="button" data-dismiss="modal">Đóng</button>
+												<button class="btn btn-success" type="submit">Cập nhật</button>
 											</div>
 										</form>
 									</div>
