@@ -85,7 +85,7 @@ class User
         $req = $db->query(
             "
             INSERT INTO user (email, profile_photo, fname, lname, gender, age, phone, createAt, updateAt, password)
-            VALUES ('$email', '$profile_photo', '$fname', '$lname', $gender, $age, '$phone', NOW(), NOW(), '$password')
+            VALUES ('$email', '$profile_photo', 'Quan', 'Thi Khac', $gender, $age, '$phone', NOW(), NOW(), '$password')
             ;");
         return $req;
     }

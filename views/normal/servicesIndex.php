@@ -6,11 +6,11 @@ include_once('views/normal/navbar.php');
   <?php
       foreach ($products as $product) {
         echo
-        '<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        '<div class="modal fade" id="Product'. $product->id .'" tabindex="-1" aria-labelledby="Product'. $product->id .'Label" aria-hidden="true">
           <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">' . $product->name . '</h5>
+                <h5 class="modal-title" id="Product'. $product->id .'Label">' . $product->name . '</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -50,7 +50,7 @@ include_once('views/normal/navbar.php');
           foreach ($products as $product) {
             echo
               '<!-- Card 1 -->
-              <div class="col" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <div class="col" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="modal" data-bs-target="#Product'. $product->id .'">
                 <div class="card h-100">
                   <img src="' . $product->img . '" class="card-img-top" alt="...">
                   <div class="card-body">
