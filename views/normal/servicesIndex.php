@@ -15,7 +15,7 @@ include_once('views/normal/navbar.php');
               </div>
               <div class="modal-body">
                   <img src="' . $product->img . '" class="card-img-top" alt="...">
-                  <h6 class="card-text"><strong>' . $product->description . '</strong></h6>
+                  <h6 class="pt-3 card-text"><strong>' . $product->description . '</strong></h6>
                   <p><strong>Giá thành: ' . $product->price . '</strong></p>
                   <p>' . $product->content . '</p>
                 </div>

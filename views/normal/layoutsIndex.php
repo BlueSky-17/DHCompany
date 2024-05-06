@@ -78,11 +78,7 @@
             <li><i class="ri-check-double-line"></i> Sáng tạo</li>
             <li><i class="ri-check-double-line"></i> Cam kết</li>
           </ul>
-          <!-- <p class="fst-italic">
-            SQT2 Glob tạo ra lợi thế cạnh tranh thông qua phản hồi nhanh chóng và cung cấp dịch vụ nhanh chóng trong
-            thời
-            gian ngắn nhất. Tại đây chúng tôi tin rằng tốc độ là chìa khóa để thành công
-          </p> -->
+
         </div>
       </div>
 

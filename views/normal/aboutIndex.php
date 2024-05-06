@@ -116,9 +116,9 @@
       <div class="row">
 
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-          <div class="member" data-aos="fade-up">
+          <div class="member" data-aos="fade-up" data-aos-delay="0">
             <div class="member-img">
-              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
+              <img src="public/dist/img/avatar.png" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -128,7 +128,7 @@
             </div>
             <div class="member-info">
               <h4>ÔNG THI KHẮC QUÂN</h4>
-              <span>Chủ tịch kiêm Tổng Giám đốc</span>
+              <span>Chủ tịch kiêm Tổng Giám đốc công ty DHCompany</span>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
+              <img src="public/dist/img/avatar.png" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -154,7 +154,7 @@
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
+              <img src="public/dist/img/avatar.png" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -172,7 +172,7 @@
         <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
           <div class="member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-              <img src="public/dist/img/avatar5.png" class="img-fluid" alt="">
+              <img src="public/dist/img/avatar.png" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>

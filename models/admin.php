@@ -4,22 +4,22 @@ class Admin
 {
     public $username;
     public $password;
-    public $createAt;
-    public $updateAt;
+    public $createDate;
+    public $updateDate;
 
-    public function __construct($username, $password, $createAt, $updateAt)
+    public function __construct($username, $password, $createDate, $updateDate)
     {
         $this->username = $username;
         $this->password = $password;
-        $this->createAt = $createAt;
-        $this->updateAt = $updateAt;
+        $this->createDate = $createDate;
+        $this->updateDate = $updateDate;
     }
 
     static function insert($username, $password)
     {
         $password = password_hash($password, PASSWORD_DEFAULT);
         $db = DB::getInstance();
-        $req = $db->query("INSERT INTO admin (username, password, createAt, updateAt) VALUES ('$username', '$password', NOW(), NOW());");
+        $req = $db->query("INSERT INTO admin (username, password, createDate, updateDate) VALUES ('$username', '$password', NOW(), NOW());");
         return $req;
     }
 
@@ -38,7 +38,7 @@ class Admin
         if (@password_verify($password, $req->fetch_assoc()['password']))
             return true;
         else
-            return true;
+            return false;
     }
 
     static function changePassword($username, $oldpassword, $newpassword)
@@ -48,7 +48,7 @@ class Admin
             $db = DB::getInstance();
             $req = $db->query(
                 "UPDATE admin
-                SET password = '$password', updateAt = NOW()
+                SET password = '$password', updateDate = NOW()
                 WHERE username = '$username';"
             );
             return $req;
@@ -63,7 +63,7 @@ class Admin
         $db = DB::getInstance();
         $req = $db->query(
             "UPDATE admin
-            SET password = '$password', updateAt = NOW()
+            SET password = '$password', updateDate = NOW()
             WHERE username = '$username';"
         );
         return $req;
@@ -78,8 +78,8 @@ class Admin
             $admins[] = new Admin(
                 $admin['username'],
                 $admin['password'],
-                $admin['createAt'],
-                $admin['updateAt']
+                $admin['createDate'],
+                $admin['updateDate']
             );
         }
         return $admins;

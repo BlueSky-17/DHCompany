@@ -46,7 +46,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.php?user=admin&controller=company&action=index">
+              <a class="nav-link" href="index.php?user=admin&controller=branch&action=index">
                 <i class="nav-icon fa fa-newspaper" aria-hidden="true"></i>
                 <p>Quản lý chi nhánh</p>
               </a>

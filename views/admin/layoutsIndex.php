@@ -110,7 +110,7 @@ require_once('views/admin/content_layouts.php'); ?>
 				</a>
 
 				<!-- Earnings (Monthly) Card Example -->
-				<a href="index.php?user=admin&controller=company&action=index" class="col-xl-4 col-md-6 mb-4">
+				<a href="index.php?user=admin&controller=branch&action=index" class="col-xl-4 col-md-6 mb-4">
 					<div class="card border-left-primary shadow h-100 py-2">
 						<div class="row card-body justify-content-center">
 							<div class="row no-gutters align-items-center">

@@ -1,6 +1,6 @@
 <?php
 require_once('connection.php');
-class Company
+class Branch
 {
     public $id;
     public $name;
@@ -20,15 +20,15 @@ class Company
     static function getAll()
     {
         $db = DB::getInstance();
-        $req = $db->query("SELECT * FROM company");
+        $req = $db->query("SELECT * FROM branch");
         $companies = [];
-        foreach ($req->fetch_all(MYSQLI_ASSOC) as $company) {
-            $companies[] = new Company(
-                $company['id'],
-                $company['name'],
-                $company['address'],
-                $company['createAt'],
-                $company['updateAt']
+        foreach ($req->fetch_all(MYSQLI_ASSOC) as $branch) {
+            $companies[] = new Branch(
+                $branch['id'],
+                $branch['name'],
+                $branch['address'],
+                $branch['createAt'],
+                $branch['updateAt']
             );
         }
         return $companies;
@@ -37,16 +37,16 @@ class Company
     static function get($id)
     {
         $db = DB::getInstance();
-        $req = $db->query("SELECT * FROM company WHERE id = $id");
+        $req = $db->query("SELECT * FROM branch WHERE id = $id");
         $result = $req->fetch_assoc();
-        $company = new Company(
+        $branch = new Branch(
             $result['id'],
             $result['name'],
             $result['address'],
             $result['createAt'],
             $result['updateAt']
         );
-        return $company;
+        return $branch;
     }
 
     static function insert($name, $address)
@@ -54,7 +54,7 @@ class Company
         $db = DB::getInstance();
         $req = $db->query(
             "
-            INSERT INTO company (name, address, createAt, updateAt)
+            INSERT INTO branch (name, address, createAt, updateAt)
             VALUES ('$name', '$address', NOW(), NOW())
             ;"
         );
@@ -64,14 +64,14 @@ class Company
     static function delete($id)
     {
         $db = DB::getInstance();
-        $req = $db->query("DELETE FROM company WHERE id = $id;");
+        $req = $db->query("DELETE FROM branch WHERE id = $id;");
         return $req;
     }
 
     static function update($id, $name, $address)
     {
         $db = DB::getInstance();
-        $req = $db->query("UPDATE company SET name = '$name', address = '$address', updateAt = NOW() WHERE id = $id;");
+        $req = $db->query("UPDATE branch SET name = '$name', address = '$address', updateAt = NOW() WHERE id = $id;");
         return $req;
     }
 }

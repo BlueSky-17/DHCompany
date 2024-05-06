@@ -89,7 +89,7 @@ require_once('views/admin/content_layouts.php'); ?>
 										echo "<tr class='text-center'>";
 										echo "<td>" . $index++ . "</td>";
 										echo "<td>" . $admin->username . "</td>";
-										echo "<td>" . $admin->updateAt . "</td>";
+										echo "<td>" . $admin->updateDate . "</td>";
 										echo "<td>
 											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$admin->username' data-password='$admin->password'> <i class='fas fa-edit'></i></btn>
 											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$admin->username'> <i class='fas fa-trash'></i></btn>

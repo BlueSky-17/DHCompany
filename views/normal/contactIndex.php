@@ -17,13 +17,6 @@ include_once('views/normal/navbar.php');
     </div>
   </section><!-- End Breadcrumbs -->
 
-  <!-- ======= Contact Section ======= -->
-  <div class="map-section">
-    <iframe style="border:0; width: 100%; height: 350px;"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.511579557377!2d106.65571311474898!3d10.772074992324471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ec3c161a3fb%3A0xef77cd47a1cc691e!2sHo%20Chi%20Minh%20City%20University%20of%20Technology%20(HCMUT)!5e0!3m2!1sen!2s!4v1670243932140!5m2!1sen!2s"
-      frameborder="0" allowfullscreen></iframe>
-  </div>
-
   <section id="contact" class="contact">
     <div class="container">
 
@@ -31,7 +24,7 @@ include_once('views/normal/navbar.php');
 
         <div class="col-lg-10">
           <?php
-          foreach ($companies as $company)
+          foreach ($companies as $branch)
           {
             echo '
             <div class="info-wrap">
@@ -39,13 +32,13 @@ include_once('views/normal/navbar.php');
                 <div class="col-lg-6 info">
                   <i class="bi bi-geo-alt"></i>
                   <h4>CHI NHÁNH</h4>
-                  <p>' . $company->name . '</p>
+                  <p>' . $branch->name . '</p>
                 </div>
 
                 <div class="col-lg-6 info mt-4 mt-lg-0">
                   <i class="bi bi-map"></i>
                   <h4>ĐỊA CHỈ</h4>
-                  <p>' . $company->address . '</p>
+                  <p>' . $branch->address . '</p>
                 </div>
               </div>
             </div>

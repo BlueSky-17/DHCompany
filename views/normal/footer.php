@@ -20,13 +20,13 @@
             <h4>Dịch vụ kỹ thuật số</h4>
             <ul>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://www.facebook.com/VNGCorporation.Page/">Development & DevOps Service</a></li>
+                  href="https://www.facebook.com/BKCSE.Multimedia">Development & DevOps Service</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://www.youtube.com/channel/UCk2jT9v-BOmjbPZ08LUbTVA">Cloud Migration</a></li>
+                  href="https://www.facebook.com/BKCSE.Multimedia">Cloud Migration</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://www.facebook.com/LifeAtVNG/">Dịch vụ quản lý đám mây</a></li>
+                  href="https://www.facebook.com/BKCSE.Multimedia">Dịch vụ quản lý đám mây</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://www.facebook.com/groups/VNGRunClub/">Tư vấn RPA & tích hợp hệ thống</a></li>
+                  href="https://www.facebook.com/BKCSE.Multimedia">Tư vấn RPA & tích hợp hệ thống</a></li>
             </ul>
           </div>
 
@@ -34,13 +34,13 @@
             <h4>Giải pháp tiên tiến</h4>
             <ul>
               <li><i style="color: #46aee1" style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://hotro.zing.vn/">IoT smart device – CIVAMs face</a></li>
+                  href="https://www.facebook.com/BKCSE.Multimedia">IoT smart device – CIVAMs face</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a href="https://zalo.me/lienhe.html">Hỗ
                   trợ tài khoản Zalo</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://www.vngcloud.vn/web/guest/trang-chu">DHCompany Social Listening</a></li>
+                  href="https://www.facebook.com/BKCSE.Multimedia">DHCompany Social Listening</a></li>
               <li><i style="color: #46aee1" class="bx bx-chevron-right"></i> <a
-                  href="https://zalopay.vn/trung-tam-ho-tro">DHCompany Chatbot</a></li>
+                  href="https://www.facebook.com/BKCSE.Multimedia">DHCompany Chatbot</a></li>
             </ul>
           </div>
 
@@ -63,12 +63,12 @@
           &copy; Copyright <strong><span>DHCompany</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          Designed by <a href="index.php?page=admin&controller=layouts&action=index">DHCompany</a>
+          Designed by <a href="index.php?user=normal&controller=layouts&action=index">DHCompany</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">
-        <a href="https://www.facebook.com/VNGCorporation.Page/" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.youtube.com/channel/UCk2jT9v-BOmjbPZ08LUbTVA" class="youtube"><i
+        <a href="https://www.facebook.com/BKCSE.Multimedia" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.facebook.com/BKCSE.Multimedia" class="youtube"><i
             class="bx bxl-youtube"></i></a>
       </div>
     </div>

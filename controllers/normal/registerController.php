@@ -24,7 +24,8 @@ class RegisterController extends BaseController
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 		echo $fname . $lname . $age . $gender . $phone . $email . $password;
-		User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
+		User::insert($email, 'public/dist/img/avatar.png', $fname, $lname, $gender, $age, $phone, $password);
+
 		header('Location: index.php?user=normal&controller=layouts&action=index');
 	}
 

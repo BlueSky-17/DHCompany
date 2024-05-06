@@ -113,17 +113,17 @@
                         <label class="form-check-label">Other</label>
                     </div>
 
-                    <div class="text-right p-t-8 p-b-31">
+                    <!-- <div class="text-right p-t-8 p-b-31">
                         <a href="#" style="color: grey;">
                             Forgot password?
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
-                                <input style="background-color:transparent" class="login100-form-btn" type="submit" value="Sign up">
+                                <input style="background-color:transparent" class="login100-form-btn" name="submit-btn" type="submit" value="Sign up">
                             </button>
                         </div>
 

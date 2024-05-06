@@ -30,15 +30,15 @@ SET time_zone = "+00:00";
 CREATE TABLE `admin` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) DEFAULT NULL,
-  `createAt` datetime DEFAULT NULL,
-  `updateAt` datetime DEFAULT NULL
+  `createDate` datetime DEFAULT NULL,
+  `updateDate` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Đang đổ dữ liệu cho bảng `admin`
 --
 
-INSERT INTO `admin` (`username`, `password`, `createAt`, `updateAt`) VALUES
+INSERT INTO `admin` (`username`, `password`, `createDate`, `updateDate`) VALUES
 ('admin', '$2y$10$EScz1sAqHnH5nXDozkzmIODdyIknUocrdqxhlZQ6wUWhrgETe8kZG', '2024-05-05 12:12:38', '2024-05-05 12:12:38');
 
 -- --------------------------------------------------------
@@ -69,10 +69,10 @@ INSERT INTO `comment` (`id`, `date`, `approved`, `content`, `news_id`, `user_id`
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `company`
+-- Cấu trúc bảng cho bảng `branch`
 --
 
-CREATE TABLE `company` (
+CREATE TABLE `branch` (
   `id` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `address` varchar(1000) DEFAULT NULL,
@@ -81,10 +81,10 @@ CREATE TABLE `company` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `company`
+-- Đang đổ dữ liệu cho bảng `branch`
 --
 
-INSERT INTO `company` (`id`, `name`, `address`, `createAt`, `updateAt`) VALUES
+INSERT INTO `branch` (`id`, `name`, `address`, `createAt`, `updateAt`) VALUES
 (1, 'Đại học Bách Khoa CS1', '268 Lý Thường Kiệt, Phường 14, Quận 10, TPHCM', NULL, NULL),
 (2, 'Đại học Bách Khoa CS2', 'Làng đại học, Thủ Đức', NULL, NULL),
 (3, 'Đại học Bách Khoa Đà Lạt', 'Đà Lạt', NULL, NULL),
@@ -198,9 +198,9 @@ ALTER TABLE `comment`
   ADD KEY `parent` (`parent`);
 
 --
--- Chỉ mục cho bảng `company`
+-- Chỉ mục cho bảng `branch`
 --
-ALTER TABLE `company`
+ALTER TABLE `branch`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -232,9 +232,9 @@ ALTER TABLE `comment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `company`
+-- AUTO_INCREMENT cho bảng `branch`
 --
-ALTER TABLE `company`
+ALTER TABLE `branch`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --

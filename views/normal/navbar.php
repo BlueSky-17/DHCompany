@@ -175,8 +175,8 @@
       </nav><!-- .navbar -->
 
       <div class="header-social-links d-flex">
-        <a href="https://www.facebook.com/VNGCorporation.Page/" class="facebook"><i class="bu bi-facebook"></i></a>
-        <a href="https://www.youtube.com/channel/UCk2jT9v-BOmjbPZ08LUbTVA" class="youtube"><i
+        <a href="https://www.facebook.com/BKCSE.Multimedia" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="https://www.facebook.com/BKCSE.Multimedia" class="youtube"><i
             class="bu bi-youtube"></i></a>
       </div>
 

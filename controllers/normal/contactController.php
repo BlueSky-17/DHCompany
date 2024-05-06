@@ -1,6 +1,6 @@
 <?php
 require_once('controllers/normal/baseController.php');
-require_once('models/company.php');
+require_once('models/branch.php');
 
 class ContactController extends BaseController
 {
@@ -11,7 +11,7 @@ class ContactController extends BaseController
 
 	public function index()
 	{
-		$companies = Company::getAll();
+		$companies = Branch::getAll();
 		$data = array('companies' => $companies);
 		$this->render('index', $data);
 	}
